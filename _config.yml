@@ -30,9 +30,18 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-# Jekyll built-ins on GitHub Pages
+# Jekyll plugins (all on the github-pages allow-list, so native build works)
 plugins:
-  - jekyll-feed
+  - jekyll-feed       # /feed.xml (RSS)
+  - jekyll-sitemap    # /sitemap.xml (helps both search engines and AI crawlers)
+  - jekyll-seo-tag    # canonical URL, Open Graph, Twitter Card, structured data
+
+# SEO tag inputs (consumed by jekyll-seo-tag)
+twitter:
+  username: ""
+  card: summary
+logo: ""
+google_site_verification: ""
 
 # Site nav (used by _includes/header.html)
 nav:

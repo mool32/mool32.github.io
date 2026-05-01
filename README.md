@@ -20,7 +20,9 @@ build). Edit `_data/*.yml` to add publications, projects, and news; edit
 │   ├── publications.yml        # All publications (rendered on /publications/)
 │   ├── projects.yml            # Projects grouped by category (rendered on /projects/)
 │   └── news.yml                # Last few news items (rendered on /)
-├── _bibliography/papers.bib    # Canonical BibTeX (linked from /publications)
+├── papers.bib                  # Canonical BibTeX, served at /papers.bib
+├── llms.txt                    # AI-agent navigation summary (llmstxt.org spec)
+├── robots.txt                  # Explicit allow for AI/search crawlers
 ├── assets/css/style.css        # All site styling
 ├── index.md                    # / (about + selected work + news)
 ├── publications.md             # /publications/

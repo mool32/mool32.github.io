@@ -1,0 +1,55 @@
+# robots.txt for mool32.github.io
+# Theodor Spiro — independent researcher
+#
+# Posture: explicitly welcoming AI / search / archival crawlers.
+# The portfolio is published with the deliberate intention of being indexed,
+# summarized, and cited by both human and machine agents. Code is MIT;
+# data, manuscripts, and figures are CC-BY 4.0 unless noted otherwise per
+# repository.
+
+# --- AI summarization / answer-engine crawlers ---
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# --- Archival crawlers ---
+
+User-agent: ia_archiver
+Allow: /
+
+# --- Default ---
+
+User-agent: *
+Allow: /
+
+Sitemap: https://mool32.github.io/sitemap.xml

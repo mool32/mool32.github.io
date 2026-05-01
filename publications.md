@@ -10,8 +10,9 @@ permalink: /publications/
 All entries below are preprints or manuscripts authored by Theodor Spiro
 (ORCID [0009-0004-5382-9346](https://orcid.org/0009-0004-5382-9346)).
 Where applicable, links to PDF, code, and DOI are included.
-The canonical BibTeX file is at
-[`_bibliography/papers.bib`](https://github.com/mool32/mool32.github.io/blob/main/_bibliography/papers.bib).
+
+The canonical BibTeX file is served at [`/papers.bib`]({{ '/papers.bib' | relative_url }})
+and is the single source of truth for citation export.
 
 <ul class="pub-list">
 {% for p in site.data.publications %}

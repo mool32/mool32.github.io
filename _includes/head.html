@@ -6,7 +6,59 @@
 
   <title>{% if page.title and page.title != site.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
 
-  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  {%- comment -%}
+    jekyll-seo-tag emits canonical URL, Open Graph, Twitter Card, and a
+    basic JSON-LD Organization/Person block. We override the Person block
+    below with a richer one tailored for AI agents and academic search.
+  {%- endcomment -%}
+  {% seo title=false %}
+
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | absolute_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+  {%- comment -%}
+    JSON-LD Person — primary structured data for AI agents and search.
+    Injected on every page (lightweight, ~30 lines, no per-page state).
+  {%- endcomment -%}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Theodor Spiro",
+    "givenName": "Theodor",
+    "familyName": "Spiro",
+    "url": "{{ site.url }}{{ site.baseurl }}/",
+    "email": "mailto:tspiro@vaika.org",
+    "jobTitle": "Independent Researcher",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Vaika Inc.",
+      "address": "East Aurora, NY, USA"
+    },
+    "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "ORCID",
+      "value": "0009-0004-5382-9346",
+      "url": "https://orcid.org/0009-0004-5382-9346"
+    },
+    "sameAs": [
+      "https://orcid.org/0009-0004-5382-9346",
+      "https://github.com/mool32",
+      "https://arxiv.org/a/spiro_t_1"
+    ],
+    "knowsAbout": [
+      "Mechanistic interpretability",
+      "Aging biomarkers",
+      "Distribution of fitness effects",
+      "Functional differentiation",
+      "Oscillatory dynamics",
+      "Cancer genomics",
+      "Transcriptomics",
+      "Cardiac electrophysiology",
+      "EEG signal processing",
+      "Population genetics analogies in neural networks"
+    ],
+    "description": "Independent researcher at Vaika Inc. working on biomarkers of biological aging across substrates (EEG, ECG, transcriptome) and on substrate-independent statistical signatures of differentiation that connect biological aging to neural-network training."
+  }
+  </script>
 </head>
