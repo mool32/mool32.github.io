@@ -1,0 +1,218 @@
+% =====================================================================
+% Theodor Spiro — publications
+% Bibliography file for al-folio Jekyll site
+% =====================================================================
+%
+% Conventions used here:
+%   - @article for preprints with a DOI (or under review at a venue)
+%   - @misc    for in-prep manuscripts and tool/dataset releases
+%   - selected = {true}   — surfaces on the /about page under "Selected work"
+%   - bibtex_show = {true} — adds a "BibTeX" button next to the entry
+%   - code = {url}        — adds a code-link button
+%   - abbr                — venue badge shown next to the title
+%   - status              — internal note on stage; not rendered, used for sorting
+%
+% Author identity: all entries are by Theodor Spiro (ORCID 0009-0004-5382-9346).
+% =====================================================================
+
+
+% =====================================================================
+% BIOLOGY / AGING BIOMARKERS
+% =====================================================================
+
+@article{spiro2026ecg,
+  abbr     = {bioRxiv},
+  title    = {Spectral exponents of the twelve-lead ECG reveal the anatomy of cardiac conduction disorders and a bifurcation between aging and disease},
+  author   = {Spiro, Theodor},
+  journal  = {bioRxiv},
+  year     = {2026},
+  doi      = {10.5281/zenodo.19945065},
+  url      = {https://doi.org/10.5281/zenodo.19945065},
+  code     = {https://github.com/mool32/ecg-spectral-exponents},
+  pdf      = {ecg_spectral_exponents_spiro_2026.pdf},
+  abstract = {Spectral exponent beta extracted from 412,730 twelve-lead recordings across three continents (PTB-XL, Chapman-Shaoxing, CODE-15). beta is diagnostic of cardiac conduction anatomy: CLBBB vs CRBBB AUC=0.982 (Germany), 0.982 (China), 0.979 (Brazil), versus 0.688 for QRS duration alone. Aging flattens the spectrum; disease steepens it. Honest null on independent mortality prediction (HR=1.02, p=0.83).},
+  selected = {true},
+  bibtex_show = {true},
+  status   = {preprint-submitted, bioRxiv ID BIORXIV/2026/717157}
+}
+
+@article{spiro2026waveform,
+  abbr     = {Front. Aging Neurosci.},
+  title    = {Waveform asymmetry as a biomarker of neural aging: spatial degradation of oscillatory cycle shape across two independent cohorts},
+  author   = {Spiro, Theodor},
+  journal  = {Frontiers in Aging Neuroscience (under review)},
+  year     = {2026},
+  doi      = {10.5281/zenodo.19912202},
+  url      = {https://doi.org/10.5281/zenodo.19912202},
+  code     = {https://github.com/mool32/waveform-asymmetry-aging},
+  pdf      = {waveform_asymmetry_spiro_2026.pdf},
+  abstract = {Peak-trough asymmetry of EEG oscillations across five frequency bands in 215 (LEMON) and 608 (Dortmund Vital Study) adults, with 208-subject 5-year longitudinal follow-up. Beta-band asymmetry decreases with age (r=-0.326 LEMON, r=-0.314 Dortmund); effect size exceeds classical alpha slowing. Theta spatial entropy predicts memory independent of age.},
+  selected = {true},
+  bibtex_show = {true},
+  status   = {under-review, Frontiers in Aging Neuroscience}
+}
+
+@article{spiro2026pitissue,
+  abbr     = {bioRxiv},
+  title    = {Transcriptomic noise accumulates within tissue identity across human aging: a systemic signature distinct from cell-composition drift},
+  author   = {Spiro, Theodor},
+  journal  = {bioRxiv},
+  year     = {2026},
+  doi      = {10.5281/zenodo.19944444},
+  url      = {https://doi.org/10.5281/zenodo.19944444},
+  code     = {https://github.com/mool32/pi-tissue-aging},
+  pdf      = {pi_tissue_spiro_2026.pdf},
+  abstract = {Three-level variance decomposition of bulk transcriptomes from 263 GTEx v8 donors (ages 20-79) plus single-cell data from Tabula Muris Senis, Calico rat caloric-restriction atlas, and a rhesus macaque cross-species atlas. Tissue identity is preserved across forty years of aging; the signature is systemic noise, not selective accumulation. Caloric restriction acts as a noise filter, not a structure restorer. Cross-species lifespan scaling (alpha=-1.02, R^2=0.90).},
+  selected = {true},
+  bibtex_show = {true},
+  status   = {preprint-submitted, post-review v4}
+}
+
+@misc{spiro2026oscillatorycancer,
+  abbr     = {preprint},
+  title    = {Temporal architecture of signaling oscillations predicts cancer gene function across pathways},
+  author   = {Spiro, Theodor},
+  year     = {2026},
+  howpublished = {Preprint},
+  code     = {https://github.com/mool32/oscillatory-cancer-framework},
+  pdf      = {oscillatory_cancer_framework_spiro_2026.pdf},
+  abstract = {157 genes across 14 oscillatory signaling pathways classified into rise-phase and recovery-phase components by temporal role only. Rise genes enriched for oncogenes, recovery for tumor suppressors (OR=27.5, p=3.6e-9). 12/12 pathways with testable cancer genes match the prediction; 12 anti-coupled cases in growth-inhibitory pathways (p53, TGF-beta) match the predicted inversion. On 22 divergent cases between temporal and naive biochemical classification, temporal framework correct in 19/22 (86 percent). GoF drug targets concentrated in rise arm (28/33 = 85 percent, p=3.3e-5).},
+  bibtex_show = {true},
+  status   = {preprint-public-on-github, github-public}
+}
+
+@misc{spiro2026nflcancer,
+  abbr     = {preprint},
+  title    = {Negative feedback loop architecture as a modular predictor of cancer vulnerability across signaling pathways},
+  author   = {Spiro, Theodor},
+  year     = {2026},
+  howpublished = {Manuscript, in preparation},
+  code     = {https://github.com/mool32/oscillatory-nfl-cancer},
+  pdf      = {oscillatory_nfl_cancer_spiro_2026.pdf},
+  abstract = {Algorithmic extraction of all short negative-feedback loops (NFLs) from 159 KEGG signaling networks. 128 unique motifs collapse into 14 pathway-level oscillatory modules; NFL genes are 59-fold enriched for Cancer Gene Census membership compared to non-NFL genes in the same pathways (Fisher exact p=9e-44). Conservation gradient from universal eukaryotic loops (ERK/DUSP, Ca2+/SERCA, ~1500 Mya) to vertebrate-specific (Notch, JAK-STAT, ~435 Mya). Irreversible Authority (IA) metric predicts cancer gene fraction across modules with Spearman rho=0.83. Eigenspace projection identifies 20 novel cancer gene candidates, 13 (65 percent) IntOGen-validated.},
+  bibtex_show = {true},
+  status   = {manuscript-in-preparation, github-public}
+}
+
+
+% =====================================================================
+% CROSS-DOMAIN: LLM <-> BIOLOGY BRIDGE
+% =====================================================================
+
+@misc{spiro2026clonalcrystallization,
+  abbr     = {preprint},
+  title    = {Clonal crystallization as a shared signature of bone-marrow aging and neural-network training},
+  author   = {Spiro, Theodor},
+  year     = {2026},
+  howpublished = {Manuscript, in preparation},
+  code     = {https://github.com/mool32/clonal-crystallization-aging},
+  pdf      = {clonal_crystallization_spiro_2026.pdf},
+  abstract = {A two-metric framework (Gini coefficient and effective number of contributing components, eff_N) applied jointly to cell-type proportion distributions in mouse tissues and to head-importance distributions across Pythia-410M training. Pythia moves through (Delta-Gini, Delta-eff_N) by (+0.145, -45.5) over 143k training steps; mouse bone marrow on FACS and Droplet platforms moves in the same quadrant of the plane (+0.088, -2.19 / +0.038, -0.54). Kidney and Limb Muscle also crystallize at coarse granularity; Lung and Spleen disperse, replicated on Kimmel 2019. Granularity is a primary parameter: Kidney TMS sub-cell-type analysis shows podocytes crystallize while macrophages disperse. Caloric restriction in rat bone marrow rescues 64 percent of the Gini drift and 57 percent of the eff_N drift (P(rescue greater than 0) = 1.000). A specific substrate-independent compositional signature, narrower than full DFE universality (companion paper arXiv:2604.10571).},
+  selected = {true},
+  bibtex_show = {true},
+  status   = {manuscript-in-preparation, github-public}
+}
+
+
+% =====================================================================
+% LLM RESEARCH
+% =====================================================================
+
+@misc{spiro2026functionaldifferentiation,
+  abbr     = {preprint},
+  title    = {Functional differentiation generates universal fitness-effect distributions in neural networks},
+  author   = {Spiro, Theodor},
+  year     = {2026},
+  howpublished = {Preprint},
+  code     = {https://github.com/mool32/functional-differentiation-dfe},
+  pdf      = {functional_differentiation_dfe_spiro_2026.pdf},
+  abstract = {Ablation studies of 144 identity-tracked attention heads, 24 transformer layers, and 30 distributed-noise perturbations at each of 8 checkpoints (step 512 to step 143000) of Pythia 410M-deduped. 1,584 ablations total; the DFE shape converges to a universal form during training.},
+  selected = {true},
+  bibtex_show = {true},
+  status   = {preprint, paper-2-llm-track}
+}
+
+@misc{spiro2026epistasisheads,
+  abbr     = {in prep},
+  title    = {Epistasis mapping in transformer attention heads: cross-model multi-checkpoint ablation interactions},
+  author   = {Spiro, Theodor},
+  year     = {2026},
+  howpublished = {In preparation},
+  code     = {https://github.com/mool32/epistasis-transformer-heads},
+  abstract = {Pairwise head-ablation interaction maps (epsilon_AB = Delta_AB - (Delta_A + Delta_B)) on Pythia 410M and OLMo2 1B across the full training trajectory. Extends the functional-differentiation DFE work with a population-genetics tool: epistasis. 78 percent of significant top-30 pairs in Pythia 410M show epsilon_loss greater than 0 (synthetic-lethal-like in Costanzo's terminology).},
+  bibtex_show = {true},
+  status   = {phase-2-in-progress}
+}
+
+@article{spiro2026aievolution,
+  abbr     = {arXiv},
+  title    = {Universal statistical signatures of evolution in artificial intelligence architectures},
+  author   = {Spiro, Theodor},
+  journal  = {arXiv},
+  year     = {2026},
+  eprint   = {2604.10571},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  doi      = {10.48550/arXiv.2604.10571},
+  url      = {https://arxiv.org/abs/2604.10571},
+  code     = {https://github.com/mool32/ai-evolution-universal-signatures},
+  abstract = {935 ablation experiments compiled from 161 publications. The distribution of fitness effects of architectural modifications matches biological DFEs across multiple organisms (heavy-tailed Student's t; 68 percent deleterious / 19 percent neutral / 13 percent beneficial for major ablations, n=568); architectural diversification follows logistic dynamics with punctuated equilibria matching paleontological radiation patterns; 14 architectural traits were independently invented 3-5 times in parallel with biological convergences. Evolutionary statistics are shaped by fitness-landscape topology, not selection mechanism.},
+  selected = {true},
+  bibtex_show = {true},
+  status   = {preprint-on-arxiv}
+}
+
+
+% =====================================================================
+% AI EPISTEMICS
+% =====================================================================
+
+@misc{spiro2026oraclefingerprint,
+  abbr     = {preprint},
+  title    = {The Oracle's Fingerprint: correlated AI forecasting errors and the limits of bias transmission},
+  author   = {Spiro, Theodor},
+  year     = {2026},
+  howpublished = {Manuscript, in preparation},
+  code     = {https://github.com/mool32/ai-oracle-fingerprint},
+  pdf      = {oracle_fingerprint_spiro_2026.pdf},
+  abstract = {Three studies on whether the "wisdom of crowds" survives consultation of a small set of LLMs. Study 1: GPT-4o, Claude, and Gemini show pairwise error correlation r=0.78 on 568 resolved binary Metaculus forecasts. Study 2: human community forecasts move in the LLM-predicted direction (r=0.20, p=0.007), but the shift is fully explained by rational updating toward ground truth (post-control beta=0.023, p=0.36, NS). Study 3: pre-ChatGPT human biases already strongly resembled the LLM pattern (r=0.87); post-ChatGPT the resemblance weakened (r=-0.28). LLMs inherited human biases rather than introducing novel ones; epistemic monoculture is built but not yet activated.},
+  selected = {true},
+  bibtex_show = {true},
+  status   = {manuscript-in-preparation, github-public}
+}
+
+
+% =====================================================================
+% COGNITION / METHODS
+% =====================================================================
+
+@misc{spiro2026datru,
+  abbr     = {manuscript},
+  title    = {21,000 attempts to think differently: a large-scale Russian adaptation of the Divergent Association Task reveals practice resistance and lexical predictors of semantic creativity},
+  author   = {Spiro, Theodor},
+  year     = {2026},
+  howpublished = {Manuscript},
+  code     = {https://github.com/mool32/dat-ru-paper},
+  url      = {https://mool32.github.io/dat-ru/},
+  abstract = {Russian-language adaptation of the Divergent Association Task (Olson et al., 2021). 21,159 submissions; Cronbach's alpha=0.899; split-half reliability 0.696; no measurable practice effect (i.i.d. sampling model preferred over mixed-effects). Strongest predictor: semantic category diversity (r=0.47). Theoretical ceiling 110.5 (best human attempt: 104.8).},
+  selected = {true},
+  bibtex_show = {true},
+  status   = {manuscript-ready, live-instrument-on-github-pages}
+}
+
+
+% =====================================================================
+% NEGATIVE RESULTS / METHODS
+% =====================================================================
+
+@misc{spiro2026cci,
+  abbr     = {report},
+  title    = {Connectivity Contrast Index across five EEG datasets: an honest non-replication and a methods note on universal comprehension biomarkers},
+  author   = {Spiro, Theodor},
+  year     = {2026},
+  howpublished = {Technical report},
+  code     = {https://github.com/mool32/eeg-connectivity-contrast},
+  abstract = {18 candidate connectivity and spectral metrics tested across 5 independent EEG datasets totaling 126 subjects, after a promising initial finding (CCI d=+0.564 on a small distance-learning dataset). No metric replicated across datasets; the strongest follow-up signal (wPLI alpha CV on DERCo, p=0.015) reversed direction on ZuCo and showed null effects on two other datasets. Negative result with implications for proposed universal EEG biomarkers of comprehension.},
+  bibtex_show = {true},
+  status   = {report-ready, write-up-only}
+}

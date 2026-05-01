@@ -1,0 +1,12 @@
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="footer-contact">
+      <strong>{{ site.author.name }}</strong> · {{ site.author.email }}
+    </div>
+    <div class="footer-links">
+      {% for s in site.social %}
+        <a href="{{ s.url }}" rel="me">{{ s.name }}</a>{% unless forloop.last %} · {% endunless %}
+      {% endfor %}
+    </div>
+  </div>
+</footer>

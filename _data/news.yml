@@ -1,0 +1,14 @@
+- date: "Apr 2026"
+  text: "[Universal statistical signatures of evolution in AI architectures](https://arxiv.org/abs/2604.10571) — preprint deposited on arXiv (2604.10571)."
+
+- date: "Apr 2026"
+  text: "[Spectral exponents of the twelve-lead ECG](https://github.com/mool32/ecg-spectral-exponents) submitted to bioRxiv. 412,730 recordings across three continents; CLBBB vs CRBBB AUC = 0.982 with cross-population invariance."
+
+- date: "Apr 2026"
+  text: "[Transcriptomic noise accumulates within tissue identity](https://github.com/mool32/pi-tissue-aging) — post-review v4 archived (Zenodo 10.5281/zenodo.19944444); GTEx + Tabula Muris Senis + Calico rat + macaque."
+
+- date: "Mar 2026"
+  text: "[Waveform asymmetry as a biomarker of neural aging](https://github.com/mool32/waveform-asymmetry-aging) submitted to *Frontiers in Aging Neuroscience* (LEMON N=215, Dortmund N=608, 5-year longitudinal subsample N=208)."
+
+- date: "Mar 2026"
+  text: "[Clonal crystallization](https://github.com/mool32/clonal-crystallization-aging) draft v2 — cross-domain bridge between Tabula Muris Senis bone-marrow aging and Pythia-410M head-importance during training."

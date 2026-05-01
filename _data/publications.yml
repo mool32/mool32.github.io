@@ -1,0 +1,146 @@
+# Each entry mirrors a record in _bibliography/papers.bib.
+# Fields:
+#   key       — BibTeX key (matches papers.bib)
+#   title, authors, year, venue, abbr (badge text)
+#   doi, arxiv, code, pdf — links (any subset)
+#   abstract  — short body text (1-2 sentences, plain text)
+#   selected  — true to surface on /about
+#   status    — short note ("preprint", "under review", "in preparation"...)
+
+- key: spiro2026aievolution
+  title: "Universal statistical signatures of evolution in artificial intelligence architectures"
+  authors: "Spiro, T."
+  year: 2026
+  venue: "arXiv:2604.10571"
+  abbr: arXiv
+  arxiv: "https://arxiv.org/abs/2604.10571"
+  doi: "10.48550/arXiv.2604.10571"
+  code: "https://github.com/mool32/ai-evolution-universal-signatures"
+  abstract: "935 ablation experiments compiled from 161 publications. The DFE of architectural modifications matches biological DFEs (heavy-tailed Student's t; 68% deleterious / 19% neutral / 13% beneficial for major ablations); architectural diversification follows logistic dynamics with punctuated equilibria; 14 architectural traits were independently invented 3–5 times in parallel with biological convergences."
+  selected: true
+  status: "preprint on arXiv"
+
+- key: spiro2026ecg
+  title: "Spectral exponents of the twelve-lead ECG reveal the anatomy of cardiac conduction disorders and a bifurcation between aging and disease"
+  authors: "Spiro, T."
+  year: 2026
+  venue: "bioRxiv (submitted)"
+  abbr: bioRxiv
+  doi: "10.5281/zenodo.19945065"
+  code: "https://github.com/mool32/ecg-spectral-exponents"
+  abstract: "Spectral exponent β extracted from 412,730 twelve-lead recordings across three continents (PTB-XL, Chapman-Shaoxing, CODE-15%). β is diagnostic of cardiac conduction anatomy: CLBBB vs CRBBB AUC = 0.982 (Germany), 0.982 (China), 0.979 (Brazil). Aging flattens the spectrum; disease steepens it. Honest null on independent mortality prediction (HR = 1.02, p = 0.83)."
+  selected: true
+  status: "preprint submitted"
+
+- key: spiro2026pitissue
+  title: "Transcriptomic noise accumulates within tissue identity across human aging"
+  authors: "Spiro, T."
+  year: 2026
+  venue: "bioRxiv (post-review v4)"
+  abbr: bioRxiv
+  doi: "10.5281/zenodo.19944444"
+  code: "https://github.com/mool32/pi-tissue-aging"
+  abstract: "Three-level variance decomposition on bulk transcriptomes from 263 GTEx v8 donors plus single-cell data from Tabula Muris Senis, Calico rat caloric-restriction atlas, and a rhesus macaque cross-species atlas. Tissue identity is preserved across forty years of aging; the signature is systemic noise, not selective accumulation. Caloric restriction acts as a noise filter, not a structure restorer. Cross-species lifespan scaling (α = −1.02, R² = 0.90)."
+  selected: true
+  status: "preprint on Zenodo"
+
+- key: spiro2026waveform
+  title: "Waveform asymmetry as a biomarker of neural aging: spatial degradation of oscillatory cycle shape across two independent cohorts"
+  authors: "Spiro, T."
+  year: 2026
+  venue: "Frontiers in Aging Neuroscience (under review)"
+  abbr: Front. Aging Neurosci.
+  doi: "10.5281/zenodo.19912202"
+  code: "https://github.com/mool32/waveform-asymmetry-aging"
+  abstract: "Peak-trough asymmetry of EEG oscillations across five frequency bands in 215 (LEMON) and 608 (Dortmund Vital Study) adults, with 208-subject 5-year longitudinal follow-up. Beta-band asymmetry decreases with age (r = −0.326 LEMON, r = −0.314 Dortmund); effect size exceeds classical alpha slowing. Theta spatial entropy predicts memory independent of age."
+  selected: true
+  status: "under review at Frontiers in Aging Neuroscience"
+
+- key: spiro2026clonalcrystallization
+  title: "Clonal crystallization as a shared signature of bone-marrow aging and neural-network training"
+  authors: "Spiro, T."
+  year: 2026
+  venue: "Manuscript, in preparation"
+  abbr: cross-domain
+  code: "https://github.com/mool32/clonal-crystallization-aging"
+  abstract: "A two-metric framework (Gini + effective N) applied jointly to mouse cell-type proportions and to Pythia-410M head-importance distributions. Pythia moves through (ΔGini, Δeff_N) by (+0.145, −45.5) over 143k steps; bone marrow on FACS and Droplet platforms moves in the same quadrant. Caloric restriction in rat bone marrow rescues 64% of the Gini drift. A specific substrate-independent signature, narrower than full DFE universality."
+  selected: true
+  status: "manuscript in preparation"
+
+- key: spiro2026functionaldifferentiation
+  title: "Functional differentiation generates universal fitness-effect distributions in neural networks"
+  authors: "Spiro, T."
+  year: 2026
+  venue: "Manuscript"
+  abbr: preprint
+  code: "https://github.com/mool32/functional-differentiation-dfe"
+  abstract: "Ablation studies of 144 identity-tracked attention heads, 24 transformer layers, and 30 distributed-noise perturbations at each of 8 checkpoints (step 512 → 143,000) of Pythia 410M-deduped — 1,584 ablations. The DFE shape evolves from delta-peak-with-outliers to heavy-tailed Student's t (df ≈ 2.3, β ≈ 0.6 within biological range). 39% of eventually-critical heads emerge from noise; only 4% are born critical. L8H9 undergoes phase-transition-like specialization between steps 4k–8k."
+  selected: true
+  status: "manuscript, submission-ready"
+
+- key: spiro2026oraclefingerprint
+  title: "The Oracle's Fingerprint: correlated AI forecasting errors and the limits of bias transmission"
+  authors: "Spiro, T."
+  year: 2026
+  venue: "Manuscript, in preparation"
+  abbr: preprint
+  code: "https://github.com/mool32/ai-oracle-fingerprint"
+  abstract: "Three studies on whether the wisdom of crowds survives consultation of a small set of LLMs. GPT-4o, Claude, and Gemini show pairwise error correlation r = 0.78 on 568 resolved binary Metaculus forecasts (Study 1). Community forecasts move in the LLM-predicted direction (r = 0.20, p = 0.007), but the shift is fully explained by rational updating toward ground truth (Study 2). Pre-ChatGPT human biases already strongly resembled the LLM pattern (r = 0.87); post-ChatGPT the resemblance weakened (r = −0.28) — LLMs inherited human biases rather than introducing novel ones (Study 3)."
+  selected: true
+  status: "manuscript in preparation"
+
+- key: spiro2026datru
+  title: "21,000 attempts to think differently: a large-scale Russian adaptation of the Divergent Association Task"
+  authors: "Spiro, T."
+  year: 2026
+  venue: "Manuscript"
+  abbr: manuscript
+  code: "https://github.com/mool32/dat-ru-paper"
+  arxiv: "https://mool32.github.io/dat-ru/"
+  abstract: "Russian-language adaptation of the Divergent Association Task (Olson et al., 2021). 21,159 submissions; Cronbach's α = 0.899; split-half reliability 0.696; no measurable practice effect. Strongest predictor: semantic category diversity (r = 0.47). Theoretical ceiling 110.5 (best human attempt: 104.8). Live instrument runs at mool32.github.io/dat-ru."
+  selected: true
+  status: "manuscript ready, live instrument deployed"
+
+- key: spiro2026oscillatorycancer
+  title: "Temporal architecture of signaling oscillations predicts cancer gene function across pathways"
+  authors: "Spiro, T."
+  year: 2026
+  venue: "Preprint"
+  abbr: preprint
+  code: "https://github.com/mool32/oscillatory-cancer-framework"
+  abstract: "157 genes across 14 oscillatory signaling pathways classified into rise-phase and recovery-phase by temporal role only. Rise genes enriched for oncogenes, recovery for tumor suppressors (OR = 27.5, p = 3.6 × 10⁻⁹); 12/12 pathways match the prediction. Predicted inversions in growth-inhibitory pathways (p53, TGF-β) confirmed. On 22 divergent cases, the temporal framework is correct in 19/22 (86%) vs 3/22 (14%) for naive biochemical classification."
+  selected: false
+  status: "preprint"
+
+- key: spiro2026nflcancer
+  title: "Negative feedback loop architecture as a modular predictor of cancer vulnerability across signaling pathways"
+  authors: "Spiro, T."
+  year: 2026
+  venue: "Manuscript, in preparation"
+  abbr: preprint
+  code: "https://github.com/mool32/oscillatory-nfl-cancer"
+  abstract: "Algorithmic extraction of 128 unique negative feedback loops from 159 KEGG signaling networks, organized into 14 pathway-level modules. NFL genes are 59-fold enriched for Cancer Gene Census membership over non-NFL genes in the same pathways (Fisher exact p = 9 × 10⁻⁴⁴). Irreversible Authority metric predicts cancer gene fraction with Spearman ρ = 0.83 across modules. Eigenspace projection identifies 20 novel cancer candidates, 13 (65%) IntOGen-validated."
+  selected: false
+  status: "manuscript in preparation"
+
+- key: spiro2026epistasisheads
+  title: "Epistasis mapping in transformer attention heads: cross-model multi-checkpoint ablation interactions"
+  authors: "Spiro, T."
+  year: 2026
+  venue: "In preparation"
+  abbr: in prep
+  code: "https://github.com/mool32/epistasis-transformer-heads"
+  abstract: "Pairwise head-ablation interaction maps (ε_AB = Δ_AB − (Δ_A + Δ_B)) on Pythia 410M and OLMo-2 1B across the full training trajectory. 78% of significant top-30 pairs in Pythia 410M show ε_loss > 0 (synthetic-lethal-like in Costanzo's terminology). The epistasis transition co-locates with the Paper 2 DFE crystallization (training steps 512–1,000), rejecting lottery-ticket emergence."
+  selected: false
+  status: "in progress, multi-phase"
+
+- key: spiro2026cci
+  title: "EEG-based comprehension detection: a multi-dataset non-replication of CCI and 17 alternative metrics"
+  authors: "Spiro, T."
+  year: 2026
+  venue: "Technical report"
+  abbr: report
+  code: "https://github.com/mool32/eeg-connectivity-contrast"
+  abstract: "Honest negative result. 18 metrics tested across 5 independent EEG datasets totaling 126 subjects, after a promising single-dataset finding (CCI window-level d = +0.564). No metric replicates across datasets; the strongest follow-up signal (wPLI alpha CV on DERCo, p = 0.015) reverses direction on ZuCo and shows null effects on STEW and Speech-in-Noise. Universal zero-calibration EEG comprehension detection is not supported."
+  selected: false
+  status: "negative result, public report"

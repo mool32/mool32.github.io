@@ -1,0 +1,59 @@
+title: Theodor Spiro
+description: Independent researcher at Vaika Inc. — biomarkers of biological aging and statistical signatures of neural-network training.
+author:
+  name: Theodor Spiro
+  email: tspiro@vaika.org
+  orcid: 0009-0004-5382-9346
+  github: mool32
+
+# URL settings — for mool32.github.io (the user-site canonical form)
+# baseurl is empty for user/org sites at <user>.github.io
+url: https://mool32.github.io
+baseurl: ""
+
+# Pretty URLs (no .html in URLs)
+permalink: pretty
+
+# Excluded from build
+exclude:
+  - README.md
+  - _landing_work
+  - .DS_Store
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .jekyll-cache
+
+# Markdown
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Jekyll built-ins on GitHub Pages
+plugins:
+  - jekyll-feed
+
+# Site nav (used by _includes/header.html)
+nav:
+  - title: About
+    url: /
+  - title: Publications
+    url: /publications/
+  - title: Projects
+    url: /projects/
+
+# Social / contact links (used in footer)
+social:
+  - name: ORCID
+    icon: orcid
+    url: https://orcid.org/0009-0004-5382-9346
+  - name: GitHub
+    icon: github
+    url: https://github.com/mool32
+  - name: arXiv
+    icon: arxiv
+    url: https://arxiv.org/a/spiro_t_1
+  - name: Email
+    icon: email
+    url: mailto:tspiro@vaika.org
