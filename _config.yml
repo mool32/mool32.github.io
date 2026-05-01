@@ -38,10 +38,7 @@ plugins:
 
 # SEO tag inputs (consumed by jekyll-seo-tag)
 twitter:
-  username: ""
   card: summary
-logo: ""
-google_site_verification: ""
 
 # Site nav (used by _includes/header.html)
 nav:

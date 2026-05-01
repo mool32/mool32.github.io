@@ -76,9 +76,10 @@ for submission.
     </div>
     <div class="pub-abstract">{{ p.abstract }}</div>
     <div class="pub-links">
-      {% if p.arxiv %}<a href="{{ p.arxiv }}">arXiv / link</a>{% endif %}
+      {% if p.arxiv %}<a href="{{ p.arxiv }}">arXiv</a>{% endif %}
       {% if p.doi %}<a href="https://doi.org/{{ p.doi }}">DOI</a>{% endif %}
       {% if p.code %}<a href="{{ p.code }}">code</a>{% endif %}
+      {% if p.demo %}<a href="{{ p.demo }}">live demo</a>{% endif %}
     </div>
   </li>
 {% endfor %}

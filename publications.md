@@ -24,10 +24,11 @@ and is the single source of truth for citation export.
     </div>
     <div class="pub-abstract">{{ p.abstract }}</div>
     <div class="pub-links">
-      {% if p.arxiv %}<a href="{{ p.arxiv }}">arXiv / link</a>{% endif %}
+      {% if p.arxiv %}<a href="{{ p.arxiv }}">arXiv</a>{% endif %}
       {% if p.doi %}<a href="https://doi.org/{{ p.doi }}">DOI {{ p.doi }}</a>{% endif %}
       {% if p.code %}<a href="{{ p.code }}">code</a>{% endif %}
       {% if p.pdf %}<a href="{{ p.pdf }}">PDF</a>{% endif %}
+      {% if p.demo %}<a href="{{ p.demo }}">live demo</a>{% endif %}
     </div>
   </li>
 {% endfor %}

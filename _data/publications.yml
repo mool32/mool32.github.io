@@ -1,8 +1,9 @@
-# Each entry mirrors a record in _bibliography/papers.bib.
+# Each entry mirrors a record in /papers.bib.
 # Fields:
 #   key       — BibTeX key (matches papers.bib)
 #   title, authors, year, venue, abbr (badge text)
-#   doi, arxiv, code, pdf — links (any subset)
+#   doi, arxiv, code, pdf — links (any subset; arxiv must be a real arXiv URL)
+#   demo      — link to a live demo / instrument (rendered separately from arxiv)
 #   abstract  — short body text (1-2 sentences, plain text)
 #   selected  — true to surface on /about
 #   status    — short note ("preprint", "under review", "in preparation"...)
@@ -96,7 +97,7 @@
   venue: "Manuscript"
   abbr: manuscript
   code: "https://github.com/mool32/dat-ru-paper"
-  arxiv: "https://mool32.github.io/dat-ru/"
+  demo: "https://mool32.github.io/dat-ru/"
   abstract: "Russian-language adaptation of the Divergent Association Task (Olson et al., 2021). 21,159 submissions; Cronbach's α = 0.899; split-half reliability 0.696; no measurable practice effect. Strongest predictor: semantic category diversity (r = 0.47). Theoretical ceiling 110.5 (best human attempt: 104.8). Live instrument runs at mool32.github.io/dat-ru."
   selected: true
   status: "manuscript ready, live instrument deployed"
