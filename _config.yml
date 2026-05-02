@@ -48,6 +48,8 @@ nav:
     url: /publications/
   - title: Projects
     url: /projects/
+  - title: Methodology
+    url: /methodology/
 
 # Social / contact links (used in footer)
 social:
