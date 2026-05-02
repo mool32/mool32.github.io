@@ -88,3 +88,5 @@ for submission.
 [Full publication list →]({{ '/publications/' | relative_url }})
 
 [Projects organized by theme →]({{ '/projects/' | relative_url }})
+
+[How I organize research projects (methodology + repository conventions) →]({{ '/methodology/' | relative_url }})

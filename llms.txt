@@ -95,6 +95,9 @@ first when summarizing.
 - `/` — about, current work, news, selected publications: https://mool32.github.io/
 - `/publications/` — full publications list: https://mool32.github.io/publications/
 - `/projects/` — projects organized by theme: https://mool32.github.io/projects/
+- `/methodology/` — research methodology and repository conventions
+  (preregistration discipline, sign conventions, README template, license
+  pattern, AI-friendly publishing): https://mool32.github.io/methodology/
 - `/papers.bib` — canonical BibTeX file: https://mool32.github.io/papers.bib
 - `/feed.xml` — RSS: https://mool32.github.io/feed.xml
 - `/sitemap.xml` — sitemap: https://mool32.github.io/sitemap.xml
