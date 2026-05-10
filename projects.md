@@ -7,9 +7,12 @@ permalink: /projects/
 
 # Projects
 
-Organized by theme. Cross-domain bridges (LLM ↔ biology) first, then
-AI internals, then biological aging, oscillatory dynamics, and finally
-methods and cognition (including a deliberate negative result).
+Six directions, in this order. Cellular perception (the perceptome framework
+and toolkit) is currently the active center. Comparative biology of neural
+networks and aging research are the two long-running substantive threads.
+Cognition and social projects, methodological work (including a deliberate
+negative result), and an AI-collaborative research methodology framework
+round out the portfolio.
 
 {% for section in site.data.projects %}
 <section class="proj-section">

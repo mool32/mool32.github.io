@@ -1,53 +1,16 @@
 # Project categories — order matters; this is also the rendering order on /projects.
-# Cross-domain first by deliberate positioning choice.
+# The portfolio organizes into six categories. Cellular perception (perceptome
+# at center) is currently the most active direction; AI-collaborative research
+# methodology is a forward-looking framework whose first artifacts are in
+# active development.
 
-- category: Cross-domain bridges (LLM ↔ biology)
-  blurb: "Pairs of substrates compared in a single paper. The unique angle of this portfolio."
+- category: Cellular perception
+  blurb: "Treating cellular signaling pathways as a perceptual repertoire. The current center of the portfolio: a framework + toolkit + a growing family of papers."
   projects:
-    - title: "Clonal crystallization as a shared signature of bone-marrow aging and neural-network training"
-      url: "https://github.com/mool32/clonal-crystallization-aging"
-      summary: "(Gini, eff_N) framework applied jointly to mouse cell-type compositions (Tabula Muris Senis, Calico CR atlas) and to Pythia-410M head-importance during training. Same quadrant; CR rescues 64% of the Gini drift in rat bone marrow."
-      status: "manuscript in preparation"
-    - title: "Universal statistical signatures of evolution in AI architectures"
-      url: "https://github.com/mool32/ai-evolution-universal-signatures"
-      summary: "935 ablation experiments from 161 ML publications. The DFE of architectural modifications matches biological DFEs; architectural diversification follows logistic dynamics with punctuated equilibria; 14 traits independently invented 3–5 times."
-      status: "preprint on arXiv (2604.10571)"
-
-- category: AI epistemics & internals
-  blurb: "How LLMs fail collectively, and what their internal organization looks like during training."
-  projects:
-    - title: "The Oracle's Fingerprint"
-      url: "https://github.com/mool32/ai-oracle-fingerprint"
-      summary: "Three studies on whether the wisdom of crowds survives consultation of a small set of LLMs. GPT-4o, Claude, Gemini show pairwise error correlation r = 0.78 on 568 Metaculus questions; LLMs inherited human biases rather than introducing novel ones."
-      status: "manuscript in preparation"
-    - title: "Functional differentiation generates universal DFE in neural networks"
-      url: "https://github.com/mool32/functional-differentiation-dfe"
-      summary: "1,584 ablations × 8 checkpoints × Pythia 410M. The DFE shape evolves from delta-peak-with-outliers to heavy-tailed Student's t. 39% of eventually-critical heads are emergent; only 4% born-critical. L8H9 undergoes phase-transition-like specialization between steps 4k–8k."
-      status: "manuscript, submission-ready"
-    - title: "Epistasis mapping in transformer attention heads"
-      url: "https://github.com/mool32/epistasis-transformer-heads"
-      summary: "Cross-model pairwise head-ablation interactions: 78% of significant top-30 pairs in Pythia 410M show synthetic-lethal-like ε > 0. The epistasis transition co-locates with the DFE crystallization at training steps 512–1,000."
-      status: "in progress, multi-phase"
-
-- category: Aging biomarkers
-  blurb: "Aging signatures across substrates: cardiac conduction, EEG, and bulk + single-cell transcriptome."
-  projects:
-    - title: "Spectral exponents of the twelve-lead ECG"
-      url: "https://github.com/mool32/ecg-spectral-exponents"
-      summary: "412,730 recordings across three continents (PTB-XL, Chapman-Shaoxing, CODE-15). β is diagnostic of cardiac conduction anatomy: CLBBB vs CRBBB AUC ≈ 0.98 across all three populations. Aging flattens the spectrum; disease steepens it. Honest null on mortality."
-      status: "preprint submitted to bioRxiv"
-    - title: "Transcriptomic noise accumulates within tissue identity across human aging"
-      url: "https://github.com/mool32/pi-tissue-aging"
-      summary: "Three-level variance decomposition on GTEx v8 + Tabula Muris Senis + Calico rat + macaque atlas. Tissue identity is preserved across 40 years of aging; the signature is systemic noise. Caloric restriction acts as a noise filter, not a structure restorer."
-      status: "preprint on Zenodo, post-Gudkov-review v4"
-    - title: "Waveform asymmetry as a biomarker of neural aging"
-      url: "https://github.com/mool32/waveform-asymmetry-aging"
-      summary: "Peak-trough asymmetry of EEG oscillations in 215 (LEMON) + 608 (Dortmund Vital Study) adults, with 208-subject 5-year longitudinal follow-up. β-band asymmetry decreases with age; effect exceeds classical alpha slowing. Theta spatial entropy predicts memory independent of age."
-      status: "under review at Frontiers in Aging Neuroscience"
-
-- category: Oscillatory dynamics & cancer
-  blurb: "Two complementary entry points to the same organizational principle."
-  projects:
+    - title: "perceptome — Python toolkit for cellular perception analysis"
+      url: "https://github.com/mool32/perceptome"
+      summary: "44 signaling modules treated as a cell's perceptual repertoire; 9-PC eigenspace from 154 Human Protein Atlas cell types; capacity-floor predictor; validity scorecard with three null controls. Headline empirical result: an 8-cell attractor cluster toward which 11 cancers from 11 organ systems converge during transformation — independently replicated on the Sun et al. 2021 paired HCC cohort."
+      status: "v0.3 public release · Zenodo DOI 10.5281/zenodo.20113468 · 73/73 tests passing"
     - title: "Temporal architecture of signaling oscillations predicts cancer gene function"
       url: "https://github.com/mool32/oscillatory-cancer-framework"
       summary: "157 genes across 14 oscillatory pathways classified by temporal role only. Rise-phase genes map to oncogenes, recovery-phase to tumor suppressors (OR = 27.5, p = 3.6 × 10⁻⁹). Predicted inversions in growth-inhibitory pathways (p53, TGF-β) confirmed."
@@ -57,14 +20,66 @@
       summary: "Algorithmic extraction of 128 NFLs from 159 KEGG signaling networks. NFL genes show 59-fold CGC enrichment over non-NFL same-pathway genes (p = 9 × 10⁻⁴⁴). Irreversible Authority metric predicts cancer gene fraction with Spearman ρ = 0.83."
       status: "manuscript in preparation"
 
-- category: Cognition & methods
-  blurb: "Including a deliberate negative result — non-replications belong on the record."
+- category: Comparative biology of neural networks
+  blurb: "Applying biological methods (DFE, population genetics, epistasis) to neural networks. Almost-biological experiments on trained transformers — same statistical apparatus that population geneticists use on yeast and flies."
+  projects:
+    - title: "Universal statistical signatures of evolution in AI architectures"
+      url: "https://github.com/mool32/ai-evolution-universal-signatures"
+      summary: "935 ablation experiments from 161 ML publications. The DFE of architectural modifications matches biological DFEs; architectural diversification follows logistic dynamics with punctuated equilibria; 14 traits independently invented 3–5 times in parallel with biological convergences."
+      status: "preprint on arXiv (2604.10571)"
+    - title: "Functional differentiation generates universal DFE in neural networks"
+      url: "https://github.com/mool32/functional-differentiation-dfe"
+      summary: "1,584 ablations × 8 checkpoints × Pythia 410M. The DFE shape evolves from delta-peak-with-outliers to heavy-tailed Student's t (df ≈ 2.3). 39% of eventually-critical heads emerge from noise; only 4% born-critical. L8H9 single-head phase-transition specialization between training steps 4k and 8k."
+      status: "manuscript, submission-ready"
+    - title: "Epistasis mapping in transformer attention heads"
+      url: "https://github.com/mool32/epistasis-transformer-heads"
+      summary: "Cross-model pairwise head-ablation interactions: 78% of significant top-30 pairs in Pythia 410M show synthetic-lethal-like ε > 0 in loss space. The epistasis transition co-locates with the DFE crystallization at training steps 512–1,000, rejecting lottery-ticket emergence."
+      status: "in progress, multi-phase"
+
+- category: Aging research / biomarkers
+  blurb: "Aging signatures across substrates: cardiac conduction, EEG, bulk and single-cell transcriptome. Cross-population replication is the default standard."
+  projects:
+    - title: "Spectral exponents of the twelve-lead ECG"
+      url: "https://github.com/mool32/ecg-spectral-exponents"
+      summary: "412,730 recordings across three continents (PTB-XL, Chapman-Shaoxing, CODE-15). β is diagnostic of cardiac conduction anatomy: CLBBB vs CRBBB AUC ≈ 0.98 across all three populations. Aging flattens the spectrum; disease steepens it. Honest null on mortality."
+      status: "preprint submitted to bioRxiv"
+    - title: "Transcriptomic noise accumulates within tissue identity across human aging"
+      url: "https://github.com/mool32/pi-tissue-aging"
+      summary: "Three-level variance decomposition on GTEx v8 + Tabula Muris Senis + Calico rat + macaque atlas. Tissue identity is preserved across 40 years of aging; the signature is systemic noise, not selective accumulation. Caloric restriction acts as a noise filter, not a structure restorer."
+      status: "preprint on Zenodo, post-Gudkov-review v4"
+    - title: "Waveform asymmetry as a biomarker of neural aging"
+      url: "https://github.com/mool32/waveform-asymmetry-aging"
+      summary: "Peak-trough asymmetry of EEG oscillations in 215 (LEMON) + 608 (Dortmund Vital Study) adults, with 208-subject 5-year longitudinal follow-up. β-band asymmetry decreases with age; effect exceeds classical alpha slowing. Theta spatial entropy predicts memory independent of age."
+      status: "under review at Frontiers in Aging Neuroscience"
+
+- category: Cognition, education, experiments, social projects
+  blurb: "Public instruments, cognition studies, and educational / social experiments."
   projects:
     - title: "DAT-RU — Russian Divergent Association Task"
       url: "https://github.com/mool32/dat-ru-paper"
       summary: "Russian-language adaptation of the DAT (Olson et al., 2021). 21,159 submissions; Cronbach's α = 0.899; split-half reliability 0.696; no measurable practice effect. Live instrument at mool32.github.io/dat-ru."
       status: "manuscript ready, live instrument deployed"
+
+- category: Methods & cross-substrate work
+  blurb: "Cross-substrate bridges and methodological contributions — including a deliberate negative result. Where same apparatus operates across different objects of study, or where the methodology itself is the contribution."
+  projects:
+    - title: "Clonal crystallization as a shared signature of bone-marrow aging and neural-network training"
+      url: "https://github.com/mool32/clonal-crystallization-aging"
+      summary: "(Gini, eff_N) framework applied jointly to mouse cell-type compositions (Tabula Muris Senis, Calico CR atlas) and to Pythia-410M head-importance during training. Same quadrant; CR rescues 64% of the Gini drift in rat bone marrow. A substrate-independent compositional signature, narrower than full DFE universality."
+      status: "manuscript in preparation"
+    - title: "The Oracle's Fingerprint — correlated AI forecasting errors"
+      url: "https://github.com/mool32/ai-oracle-fingerprint"
+      summary: "Three studies on whether the wisdom of crowds survives consultation of a small set of LLMs. GPT-4o, Claude, Gemini show pairwise error correlation r = 0.78 on 568 Metaculus questions; LLMs inherited human biases rather than introducing novel ones. A methodological observation about collective AI behavior at scale."
+      status: "manuscript in preparation"
     - title: "EEG comprehension detection — a multi-dataset non-replication"
       url: "https://github.com/mool32/eeg-connectivity-contrast"
       summary: "18 metrics tested across 5 independent EEG datasets, 126 subjects total. No metric replicates across datasets; the strongest within-subject signal (DERCo wPLI alpha CV) reverses direction on ZuCo. A universal zero-calibration EEG comprehension detector does not exist with current metrics."
       status: "honest negative result"
+
+- category: AI-collaborative research methodology
+  blurb: "A framework for doing science in active collaboration with AI — preregistration discipline, sign conventions, locked-vs-working artifacts, AI-friendly publishing — with this portfolio as the worked-example track. First standalone artifacts (writeups, papers) in active development."
+  projects:
+    - title: "Methodology framework"
+      url: "https://mool32.github.io/methodology/"
+      summary: "Canonical document covering project lifecycle (scaffolding → pilot → full run under locked preregistration), sign-convention locks, repository structure conventions, README templates, code discipline, manuscript discipline, AI-friendly publishing (llms.txt, robots.txt, JSON-LD, served BibTeX), and reference exemplars. 17 sections; the epistasis pair (ML side + biology side) is the worked example throughout."
+      status: "v1 live; new artifacts (papers, blog posts) forthcoming"

@@ -13,28 +13,27 @@ description: Theodor Spiro — independent researcher at Vaika Inc.
   </div>
 
   <p class="positioning">
-    My work is at the intersection of biomarkers of biological aging and
-    statistical signatures of neural-network training. Recent papers span
-    cardiac conduction, transcriptomic noise, EEG aging, oscillatory
-    cancer signaling, and AI-architecture evolution.
+    Currently centered on <strong><a href="https://github.com/mool32/perceptome">perceptome</a></strong>
+    — a framework treating cellular signaling pathways as a perceptual repertoire,
+    with a Python toolkit (44 modules, 9-PC eigenspace, cancer attractor reference).
+    Alongside: aging biomarkers across substrates (EEG, ECG, transcriptome),
+    the comparative biology of neural networks (DFE and epistasis applied to LLM
+    training), and a developing framework for doing science in active collaboration
+    with AI.
   </p>
 </section>
 
 ## About
 
 I'm an independent researcher (Vaika Inc., East Aurora, NY) with a biophysics
-background. I work primarily on two threads: aging biomarkers across substrates
-(EEG, ECG, bulk and single-cell transcriptome) and substrate-independent
-statistical signatures of differentiation that connect biological aging to
-neural-network training.
+background. The portfolio organizes into six directions:
 
-Recent work includes a [cross-population replication of an ECG conduction-anatomy
-biomarker across 412,730 recordings](https://github.com/mool32/ecg-spectral-exponents),
-a [variance-decomposition analysis of transcriptomic
-aging](https://github.com/mool32/pi-tissue-aging) that adjudicates between
-systemic-noise and selective-accumulation models, and [an arXiv paper showing
-that the distribution of fitness effects of architectural modifications matches
-biological DFEs](https://arxiv.org/abs/2604.10571) across 935 ablation experiments.
+1. **Cellular perception** — [perceptome](https://github.com/mool32/perceptome) (toolkit + framework + a growing family of papers) and related work on oscillatory signaling and cancer
+2. **Comparative biology of neural networks** — DFE, epistasis, and population-genetics tools applied to trained transformers
+3. **Aging research / biomarkers** — cross-population replications on cardiac, transcriptomic, and EEG substrates
+4. **Cognition, education, experiments, social projects** — instruments and studies of human cognition
+5. **Methods & cross-substrate work** — bridges, methodological contributions, and honest negative results
+6. **AI-collaborative research methodology** — the framework behind all of the above, applied as worked examples
 
 I publish under one canonical name everywhere: Theodor Spiro
 (ORCID [0009-0004-5382-9346](https://orcid.org/0009-0004-5382-9346)).
@@ -43,12 +42,17 @@ Manuscripts and code are released on GitHub at
 
 ## Currently
 
-Writing up [Paper 2 (LLM track)](https://github.com/mool32/functional-differentiation-dfe)
-on functional differentiation in transformer training, with a second-order
-[epistasis](https://github.com/mool32/epistasis-transformer-heads) extension
-running on Pythia 410M and OLMo-2 1B. In parallel, finalizing the
-[clonal-crystallization cross-domain bridge](https://github.com/mool32/clonal-crystallization-aging)
-for submission.
+[perceptome v0.3](https://github.com/mool32/perceptome) is the active center
+of the work — a Python toolkit for cellular perception analysis with a 9-PC
+eigenspace, capacity-floor predictor, validity scorecard, and an 8-cell cancer
+attractor reference. A family of papers around the framework is in
+preparation. In parallel:
+[functional-differentiation DFE](https://github.com/mool32/functional-differentiation-dfe)
+manuscript writeup, the
+[epistasis](https://github.com/mool32/epistasis-transformer-heads) Tier-2
+extension on Pythia 410M / OLMo-2 1B, and the
+[clonal-crystallization cross-substrate bridge](https://github.com/mool32/clonal-crystallization-aging)
+preparing for submission.
 
 ## News
 
@@ -89,4 +93,4 @@ for submission.
 
 [Projects organized by theme →]({{ '/projects/' | relative_url }})
 
-[How I organize research projects (methodology + repository conventions) →]({{ '/methodology/' | relative_url }})
+[AI-collaborative research methodology →]({{ '/methodology/' | relative_url }})

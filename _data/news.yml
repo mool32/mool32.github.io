@@ -1,5 +1,8 @@
+- date: "May 2026"
+  text: "[perceptome](https://github.com/mool32/perceptome) v0.3 released — Python toolkit for cellular perception analysis (44 signaling modules, 9-PC eigenspace from 154 HPA cell types, capacity-floor predictor, validity scorecard, 8-cell cancer attractor reference). Zenodo DOI [10.5281/zenodo.20113468](https://doi.org/10.5281/zenodo.20113468). 73/73 tests passing."
+
 - date: "Apr 2026"
-  text: "[Universal statistical signatures of evolution in AI architectures](https://arxiv.org/abs/2604.10571) — preprint deposited on arXiv (2604.10571)."
+  text: "[Universal statistical signatures of evolution in AI architectures](https://arxiv.org/abs/2604.10571) — preprint deposited on arXiv (2604.10571). 935 ablation experiments from 161 ML publications show that the DFE of architectural modifications matches biological DFEs."
 
 - date: "Apr 2026"
   text: "[Spectral exponents of the twelve-lead ECG](https://github.com/mool32/ecg-spectral-exponents) submitted to bioRxiv. 412,730 recordings across three continents; CLBBB vs CRBBB AUC = 0.982 with cross-population invariance."
@@ -9,6 +12,3 @@
 
 - date: "Mar 2026"
   text: "[Waveform asymmetry as a biomarker of neural aging](https://github.com/mool32/waveform-asymmetry-aging) submitted to *Frontiers in Aging Neuroscience* (LEMON N=215, Dortmund N=608, 5-year longitudinal subsample N=208)."
-
-- date: "Mar 2026"
-  text: "[Clonal crystallization](https://github.com/mool32/clonal-crystallization-aging) draft v2 — cross-domain bridge between Tabula Muris Senis bone-marrow aging and Pythia-410M head-importance during training."
