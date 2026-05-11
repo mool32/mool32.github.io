@@ -1,20 +1,33 @@
 ---
 layout: default
 title: Methodology
-description: How research projects are organized, preregistered, and released — the conventions used across the mool32 portfolio.
+description: A framework for doing science in active collaboration with AI — preregistration discipline, sign conventions, locked-vs-working artifacts, AI-friendly publishing — applied across the mool32 portfolio.
 permalink: /methodology/
 ---
 
-# Research methodology and repository conventions
+# AI-collaborative research methodology
 
-This document is the canonical reference for how I organize, preregister, and
-release research projects. It exists so that:
+This document is the canonical reference for the **AI-collaborative research
+methodology framework** I am developing and applying across this portfolio.
+Preregistration discipline, sign conventions, locked-vs-working artifacts,
+code reproducibility, manuscript hygiene, and AI-friendly publishing are not
+separate practices — they are the same framework. Doing serious science in
+active collaboration with AI requires explicit machinery that prevents the
+predictable failure modes; that machinery is what this document specifies.
 
+The portfolio is the worked-example track. Standalone artifacts about the
+framework itself (writeups, papers) are in active development and will be
+listed under [Projects → AI-collaborative research methodology]({{ '/projects/' | relative_url }}#ai-collaborative-research-methodology)
+as they appear. Until then, the framework is best read through this document
+plus the concrete repositories cited throughout.
+
+The document exists so that:
+
+- The principles of the framework are publicly auditable, not implicit
 - I do not re-derive structural decisions for each new project
 - Collaborators (and AI agents) reading any one repository can locate the
   underlying conventions in a single place
-- The discipline of the work — preregistration, sign conventions, locked-vs-
-  working artifacts, reproducibility — is itself part of the public record
+- The discipline of the work is itself part of the public record
 
 The running examples throughout are the **epistasis pair**:
 [epistasis-transformer-heads](https://github.com/mool32/epistasis-transformer-heads)
