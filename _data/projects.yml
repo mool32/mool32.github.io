@@ -35,6 +35,10 @@
       url: "https://github.com/mool32/epistasis-transformer-heads"
       summary: "Cross-model pairwise head-ablation interactions: 78% of significant top-30 pairs in Pythia 410M show synthetic-lethal-like ε > 0 in loss space. The epistasis transition co-locates with the DFE crystallization at training steps 512–1,000, rejecting lottery-ticket emergence."
       status: "in progress, multi-phase"
+    - title: "Developmental epistasis in single-cell RNA-seq (biology-side sister)"
+      url: "https://github.com/mool32/developmental-epistasis-scrna"
+      summary: "Biological counterpart to the ML epistasis study above: does the synthetic-lethal/redundancy regime found in Pythia 410M heads have a developmental analog in cell differentiation? Tests the prediction on Schiebinger 2019 reprogramming scRNA-seq, with Norman 2019 perturb-seq as a true-perturbation comparator. Same statistical apparatus across substrates."
+      status: "scaffolding + active pilot calibration"
 
 - category: Aging research / biomarkers
   blurb: "Aging signatures across substrates: cardiac conduction, EEG, bulk and single-cell transcriptome. Cross-population replication is the default standard."
@@ -59,6 +63,18 @@
       url: "https://github.com/mool32/dat-ru-paper"
       summary: "Russian-language adaptation of the DAT (Olson et al., 2021). 21,159 submissions; Cronbach's α = 0.899; split-half reliability 0.696; no measurable practice effect. Live instrument at mool32.github.io/dat-ru."
       status: "manuscript ready, live instrument deployed"
+    - title: "You Are Not Random — a small web experiment on randomness intuition"
+      url: "https://github.com/mool32/you-are-not-random"
+      summary: "Russian-language interactive experiment (\"Ты не случаен\") in the BrainyBara line of educational / playful experiments. Live at mool32.github.io/you-are-not-random."
+      status: "live"
+    - title: "Game-theoretic conflict model (USA vs Iran, v5.1)"
+      url: "https://github.com/mool32/game_theory_models"
+      summary: "A 4-player repeated non-cooperative game with incomplete information, stochastic shocks, oil-price dynamics, nuclear-escalation logic, and economic phase transitions. 500 Monte Carlo simulations; approximate Nash equilibrium via best-response dynamics. Built as content / teaching material on game theory, not as a forecast — interpretation discipline named explicitly in the README. Live demo at mool32.github.io/game_theory_models."
+      status: "v5.1, live demo deployed"
+    - title: "Мацав Тов — Telegram support bot"
+      url: "https://github.com/mool32/matsav_ok_bot"
+      summary: "Telegram bot delivering short supportive messages four times daily; community-contributed phrases with moderation. Built during a difficult period in Israel (\"matsav tov\" — \"good state\" — is the inversion of the wartime-news framing \"matsav\"). The first public version of an ongoing family of small social-support bots; other variants are kept private for now."
+      status: "deployed, first public version"
 
 - category: Methods & cross-substrate work
   blurb: "Cross-substrate bridges and methodological contributions — including a deliberate negative result. Where same apparatus operates across different objects of study, or where the methodology itself is the contribution."
@@ -77,9 +93,13 @@
       status: "honest negative result"
 
 - category: AI-collaborative research methodology
-  blurb: "A framework for doing science in active collaboration with AI — preregistration discipline, sign conventions, locked-vs-working artifacts, AI-friendly publishing — with this portfolio as the worked-example track. First standalone artifacts (writeups, papers) in active development."
+  blurb: "A framework for doing science in active collaboration with AI — preregistration discipline, sign conventions, locked-vs-working artifacts, AI-friendly publishing — with this portfolio as the worked-example track. First concrete pre-registered study under the framework is now public."
   projects:
     - title: "Methodology framework"
       url: "https://mool32.github.io/methodology/"
       summary: "Canonical document covering project lifecycle (scaffolding → pilot → full run under locked preregistration), sign-convention locks, repository structure conventions, README templates, code discipline, manuscript discipline, AI-friendly publishing (llms.txt, robots.txt, JSON-LD, served BibTeX), and reference exemplars. 17 sections; the epistasis pair (ML side + biology side) is the worked example throughout."
-      status: "v1 live; new artifacts (papers, blog posts) forthcoming"
+      status: "v1 live"
+    - title: "Epistemic Fitness Pilot — can an LLM discriminate scientific ideas by future impact?"
+      url: "https://github.com/mool32/scientific-idea-fitness-pilot"
+      summary: "Pre-registered retrodictive-calibration pilot: given a paper's abstract stripped of technical content, can an LLM predict its multi-year scientific impact substantially better than citation-velocity baseline? Primary metric: Spearman ρ between LLM score and composite Impact, with a +0.05 margin over baseline required for go/no-go. Pre-registration v1.0 hash-locked 2026-05-01 (SHA-256 in HASH.md); stop condition binary and pre-committed. Pilot 1A: NLP corpus + Opus 4.7 + Pythia 6.9B (contamination control). Stage-gate to Pilot 1B contingent on 1A passing. First concrete artifact applying the framework end-to-end."
+      status: "pre-registration v1.0 locked, Pilot 1A in setup"

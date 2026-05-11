@@ -67,6 +67,11 @@ networks. Almost-biological experiments on trained transformers.
   In progress. 78% of significant top-30 pairs in Pythia 410M show
   synthetic-lethal-like ε > 0; epistasis transition co-locates with the DFE
   crystallization at training steps 512–1,000.
+- [Developmental epistasis in single-cell RNA-seq](https://github.com/mool32/developmental-epistasis-scrna):
+  Biology-side sister to epistasis-transformer-heads. Tests whether the
+  synthetic-lethal/redundancy regime found in Pythia 410M has a developmental
+  analog in cell differentiation. Schiebinger 2019 reprogramming + Norman 2019
+  perturb-seq comparator. Same statistical apparatus across substrates.
 
 ### 3. Aging research / biomarkers
 - [Spectral exponents of the twelve-lead ECG](https://github.com/mool32/ecg-spectral-exponents):
@@ -87,6 +92,19 @@ networks. Almost-biological experiments on trained transformers.
 - [DAT-RU: Russian Divergent Association Task](https://github.com/mool32/dat-ru-paper):
   21,159 submissions; Cronbach's α=0.899; no measurable practice effect.
   Live instrument deployed at https://mool32.github.io/dat-ru/.
+- [You Are Not Random](https://github.com/mool32/you-are-not-random):
+  Russian-language interactive web experiment on randomness intuition; live
+  at mool32.github.io/you-are-not-random. BrainyBara line.
+- [Game-theoretic conflict model (USA vs Iran, v5.1)](https://github.com/mool32/game_theory_models):
+  4-player repeated non-cooperative game with incomplete information,
+  stochastic shocks, oil-price dynamics, nuclear escalation logic. 500 MC
+  simulations. Educational content / game-theory teaching artifact, not a
+  forecast — README names interpretation discipline explicitly. Live demo at
+  mool32.github.io/game_theory_models.
+- [Мацав Тов — Telegram support bot](https://github.com/mool32/matsav_ok_bot):
+  Wartime support bot delivering short supportive messages; community
+  contributions with moderation; 4 daily messages. First public version of an
+  ongoing family of small social-support bots.
 
 ### 5. Methods & cross-substrate work
 Substrate bridges and methodological contributions, including a deliberate
@@ -111,12 +129,17 @@ honest negative result.
 A framework for doing science in active collaboration with AI —
 preregistration discipline, sign conventions, locked-vs-working artifacts,
 AI-friendly publishing. The portfolio is the worked-example track.
-First standalone artifacts (writeups, papers) are in active development.
 - [Methodology framework](https://mool32.github.io/methodology/):
   Canonical document (17 sections, ~770 lines). Project lifecycle, sign
   conventions, repository structure, README templates, code discipline,
   manuscript discipline, AI-friendly publishing. The epistasis pair
   (ML side + biology side) is the worked example throughout.
+- [Epistemic Fitness Pilot](https://github.com/mool32/scientific-idea-fitness-pilot):
+  Pre-registered retrodictive-calibration pilot testing whether an LLM can
+  discriminate scientific ideas by future impact. Pre-registration v1.0
+  hash-locked 2026-05-01 (SHA-256 in HASH.md); binary pre-committed stop
+  condition. Pilot 1A uses Opus 4.7 + Pythia 6.9B (contamination control)
+  on an NLP corpus. First concrete artifact applying the framework end-to-end.
 
 ## Canonical landing pages
 
