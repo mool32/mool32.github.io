@@ -5,9 +5,9 @@ description: Curriculum vitae — Theodor Spiro, independent researcher (cellula
 permalink: /cv/
 ---
 
-<div class="cv">
+<div class="cv" markdown="1">
 
-<header class="cv-header">
+<header class="cv-header" markdown="0">
   <h1 class="cv-name">Theodor Spiro</h1>
   <div class="cv-tagline">Independent Researcher — cellular perception, aging biomarkers, and the comparative biology of learning systems</div>
   <div class="cv-contact">
