@@ -281,3 +281,41 @@ hr {
   border-radius: 0 4px 4px 0;
 }
 .pub-headline .pub-title { font-size: 18px; }
+
+/* ---- CV page ---- */
+.cv { font-size: 15px; line-height: 1.45; }
+.cv-header { margin-bottom: 1.2em; }
+.cv-name { font-size: 30px; margin: 0 0 2px; }
+.cv-tagline { font-style: italic; color: var(--fg-soft); font-size: 15px; margin-bottom: 8px; }
+.cv-contact { font-family: var(--sans); font-size: 13px; color: var(--fg-soft); line-height: 1.6; }
+.cv-contact a { color: var(--fg-soft); }
+.cv-contact a:hover { color: var(--fg); }
+.cv-grant { margin-top: 6px; color: var(--accent); font-weight: 600; font-size: 14px; }
+.cv-download { margin-top: 8px; font-family: var(--sans); font-size: 13px; }
+.cv h2 {
+  font-size: 16px;
+  margin-top: 1.3em;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.cv h2:first-of-type { margin-top: 0.8em; }
+.cv ul { padding-left: 18px; margin: 0.4em 0; }
+.cv li { margin: 0.35em 0; }
+.cv p { margin: 0.5em 0; }
+.cv strong { color: var(--fg); }
+
+/* ---- print: clean A4 export of the CV ---- */
+@media print {
+  .site-header, .site-footer, .cv-download { display: none !important; }
+  body { font-size: 10.5pt; color: #000; background: #fff; }
+  main.content { margin: 0; max-width: 100%; padding: 0; }
+  .cv { font-size: 10pt; line-height: 1.35; }
+  .cv-name { font-size: 20pt; }
+  .cv h2 { font-size: 11pt; margin-top: 12pt; page-break-after: avoid; }
+  .cv li, .cv p { page-break-inside: avoid; }
+  a { color: #000; text-decoration: none; }
+  @page { margin: 1.4cm; }
+}

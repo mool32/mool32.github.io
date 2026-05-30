@@ -50,6 +50,8 @@ nav:
     url: /projects/
   - title: Methodology
     url: /methodology/
+  - title: CV
+    url: /cv/
 
 # Social / contact links (used in footer)
 social:

@@ -124,3 +124,5 @@ preparing for submission.
 [Projects organized by theme →]({{ '/projects/' | relative_url }})
 
 [AI-collaborative research methodology →]({{ '/methodology/' | relative_url }})
+
+[Curriculum vitae →]({{ '/cv/' | relative_url }})
