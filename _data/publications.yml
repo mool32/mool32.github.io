@@ -18,6 +18,7 @@
   code: "https://github.com/mool32/perceptome"
   abstract: "A Python toolkit treating 44 cellular signaling pathways (NF-κB, mTOR, UPR, p53, nuclear receptors, …) as a cell's perceptual repertoire. Three capabilities other tools don't directly provide: (1) a 9-PC eigenspace derived from 154 normal human cell types (Human Protein Atlas) where any cell — yours, a tumor, a drug-treated — can be located on the same map; (2) a capacity-floor predictor — given a cell type and a pathway, will it ramp under stimulus or is it already saturated; (3) a validity scorecard with three null controls (random-gene panel, housekeeping, cell cycle) that catches common perturbation artifacts before interpretation. The framework's headline empirical result is an 8-cell attractor cluster (gastric chief, pancreatic acinar, ..., gastric progenitor) that 11 cancers from 11 organ systems converge toward during transformation — independently replicated on the Sun et al. 2021 paired HCC cohort. Result of a multi-year, pre-registered research program; the tool implements only what those studies validated and deliberately excludes operations that were tested and falsified."
   selected: true
+  headline: true
   status: "v0.3 public release, May 2026"
 
 - key: spiro2026aievolution
@@ -43,6 +44,7 @@
   code: "https://github.com/mool32/ecg-spectral-exponents"
   abstract: "Spectral exponent β extracted from 412,730 twelve-lead recordings across three continents (PTB-XL, Chapman-Shaoxing, CODE-15%). β is diagnostic of cardiac conduction anatomy: CLBBB vs CRBBB AUC = 0.982 (Germany), 0.982 (China), 0.979 (Brazil). Aging flattens the spectrum; disease steepens it. Honest null on independent mortality prediction (HR = 1.02, p = 0.83)."
   selected: true
+  headline: true
   status: "preprint submitted"
 
 - key: spiro2026pitissue
@@ -55,6 +57,7 @@
   code: "https://github.com/mool32/pi-tissue-aging"
   abstract: "Three-level variance decomposition on bulk transcriptomes from 263 GTEx v8 donors plus single-cell data from Tabula Muris Senis, Calico rat caloric-restriction atlas, and a rhesus macaque cross-species atlas. Tissue identity is preserved across forty years of aging; the signature is systemic noise, not selective accumulation. Caloric restriction acts as a noise filter, not a structure restorer. Cross-species lifespan scaling (α = −1.02, R² = 0.90)."
   selected: true
+  headline: true
   status: "preprint on Zenodo"
 
 - key: spiro2026waveform

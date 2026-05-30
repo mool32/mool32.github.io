@@ -1,4 +1,7 @@
 - date: "May 2026"
+  text: "Awarded an [Emergent Ventures](https://www.mercatus.org/emergent-ventures) grant (2026) in support of the research program."
+
+- date: "May 2026"
   text: "[perceptome](https://github.com/mool32/perceptome) v0.3 released — Python toolkit for cellular perception analysis (44 signaling modules, 9-PC eigenspace from 154 HPA cell types, capacity-floor predictor, validity scorecard, 8-cell cancer attractor reference). Zenodo DOI [10.5281/zenodo.20113468](https://doi.org/10.5281/zenodo.20113468). 73/73 tests passing."
 
 - date: "Apr 2026"

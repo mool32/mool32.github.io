@@ -7,9 +7,12 @@ description: Theodor Spiro — independent researcher at Vaika Inc.
 <section class="hero">
   <h1 class="name">Theodor Spiro</h1>
   <div class="id-line">
-    Independent researcher · Vaika Inc., East Aurora, NY ·
+    Independent researcher · Vaika Inc., East Aurora, NY · Based in Tel Aviv, Israel ·
     <a href="https://orcid.org/0009-0004-5382-9346">ORCID 0009-0004-5382-9346</a> ·
     <a href="mailto:tspiro@vaika.org">tspiro@vaika.org</a>
+  </div>
+  <div class="id-line id-line-grant">
+    Emergent Ventures grant recipient (2026)
   </div>
 
   <p class="positioning">
@@ -25,8 +28,13 @@ description: Theodor Spiro — independent researcher at Vaika Inc.
 
 ## About
 
-I'm an independent researcher (Vaika Inc., East Aurora, NY) with a biophysics
-background. The portfolio organizes into six directions:
+I'm an independent researcher based in Tel Aviv, Israel, affiliated with
+Vaika Inc. (East Aurora, NY). My background is in biophysics (Lomonosov
+Moscow State University, Faculty of Physics), where my early research was
+computational modeling of cellular signaling — a thread that runs directly
+into the cellular-perception work that now anchors the portfolio. I am a
+2026 [Emergent Ventures](https://www.mercatus.org/emergent-ventures) grant
+recipient. The work organizes into six directions:
 
 1. **Cellular perception** — [perceptome](https://github.com/mool32/perceptome) (toolkit + framework + a growing family of papers) and related work on oscillatory signaling and cancer
 2. **Comparative biology of neural networks** — DFE, epistasis, and population-genetics tools applied to trained transformers
@@ -69,10 +77,10 @@ preparing for submission.
 
 ## Selected work
 
-<ul class="pub-list">
-{% assign selected = site.data.publications | where: "selected", true %}
-{% for p in selected %}
-  <li class="pub">
+<ul class="pub-list pub-list-headline">
+{% assign headline = site.data.publications | where: "headline", true %}
+{% for p in headline %}
+  <li class="pub pub-headline">
     <div class="pub-title">{{ p.title }}</div>
     <div class="pub-meta">
       {% if p.abbr %}<span class="abbr">{{ p.abbr }}</span>{% endif %}
@@ -87,6 +95,28 @@ preparing for submission.
     </div>
   </li>
 {% endfor %}
+</ul>
+
+### Additional selected work
+
+<ul class="pub-list">
+{% assign selected = site.data.publications | where: "selected", true %}
+{% for p in selected %}{% unless p.headline %}
+  <li class="pub">
+    <div class="pub-title">{{ p.title }}</div>
+    <div class="pub-meta">
+      {% if p.abbr %}<span class="abbr">{{ p.abbr }}</span>{% endif %}
+      {{ p.authors }} · {{ p.year }} · <em>{{ p.venue }}</em>
+    </div>
+    <div class="pub-abstract">{{ p.abstract }}</div>
+    <div class="pub-links">
+      {% if p.arxiv %}<a href="{{ p.arxiv }}">arXiv</a>{% endif %}
+      {% if p.doi %}<a href="https://doi.org/{{ p.doi }}">DOI</a>{% endif %}
+      {% if p.code %}<a href="{{ p.code }}">code</a>{% endif %}
+      {% if p.demo %}<a href="{{ p.demo }}">live demo</a>{% endif %}
+    </div>
+  </li>
+{% endunless %}{% endfor %}
 </ul>
 
 [Full publication list →]({{ '/publications/' | relative_url }})
