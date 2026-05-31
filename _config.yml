@@ -64,6 +64,9 @@ social:
   - name: arXiv
     icon: arxiv
     url: https://arxiv.org/a/spiro_t_1
+  - name: LinkedIn
+    icon: linkedin
+    url: https://www.linkedin.com/in/theodorspiro
   - name: Email
     icon: email
     url: mailto:tspiro@vaika.org

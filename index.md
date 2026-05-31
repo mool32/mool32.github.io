@@ -7,7 +7,7 @@ description: Theodor Spiro — independent researcher at Vaika Inc.
 <section class="hero">
   <h1 class="name">Theodor Spiro</h1>
   <div class="id-line">
-    Independent researcher · Vaika Inc., East Aurora, NY · Based in Tel Aviv, Israel ·
+    Independent researcher · Vaika Inc. (aging-research nonprofit, Gudkov lab) · Based in Tel Aviv, Israel ·
     <a href="https://orcid.org/0009-0004-5382-9346">ORCID 0009-0004-5382-9346</a> ·
     <a href="mailto:tspiro@vaika.org">tspiro@vaika.org</a>
   </div>
@@ -28,13 +28,21 @@ description: Theodor Spiro — independent researcher at Vaika Inc.
 
 ## About
 
-I'm an independent researcher based in Tel Aviv, Israel, affiliated with
-Vaika Inc. (East Aurora, NY). My background is in biophysics (Lomonosov
-Moscow State University, Faculty of Physics), where my early research was
-computational modeling of cellular signaling — a thread that runs directly
-into the cellular-perception work that now anchors the portfolio. I am a
-2026 [Emergent Ventures](https://www.mercatus.org/emergent-ventures) grant
-recipient. The work organizes into six directions:
+I'm an independent computational researcher based in Tel Aviv, Israel. My
+background is in biophysics (Lomonosov Moscow State University, Faculty of
+Physics), where my early research was computational modeling of cellular
+signaling — a thread that runs directly into the cellular-perception work
+that now anchors the portfolio. I am a 2026
+[Emergent Ventures](https://www.mercatus.org/emergent-ventures) grant
+recipient.
+
+Since 2024 I have been affiliated with **Vaika Inc.**, a not-for-profit
+aging-research organization associated with the laboratory of Andrei Gudkov
+(Roswell Park Comprehensive Cancer Center); my aging manuscripts are developed
+and reviewed within that affiliation. The independent research program itself
+runs from 2020.
+
+The work organizes into six directions:
 
 1. **Cellular perception** — [perceptome](https://github.com/mool32/perceptome) (toolkit + framework + a growing family of papers) and related work on oscillatory signaling and cancer
 2. **Comparative biology of neural networks** — DFE, epistasis, and population-genetics tools applied to trained transformers
