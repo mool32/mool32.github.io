@@ -319,3 +319,76 @@ hr {
   a { color: #000; text-decoration: none; }
   @page { margin: 1.4cm; }
 }
+
+/* ============================================================ */
+/* ---- results / figure pages (e.g. /nn-as-sensor/) ---------- */
+/* ============================================================ */
+
+/* status badges */
+.badge-row { font-family: var(--sans); margin: 12px 0 6px; line-height: 2; }
+.badge {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  padding: 2px 9px;
+  border-radius: 3px;
+  border: 1px solid var(--line);
+  background: var(--bg-card);
+  color: var(--fg-soft);
+  margin-right: 6px;
+  white-space: nowrap;
+}
+.badge.neg { border-color: var(--accent); color: var(--accent); background: #fbeeee; font-weight: 600; }
+
+/* lede + key-finding callout */
+.lede { font-size: 19px; line-height: 1.5; margin: 0.6em 0 1.1em; }
+.callout {
+  border-left: 3px solid var(--accent);
+  background: var(--bg-card);
+  padding: 12px 16px;
+  margin: 1.3em 0;
+  border-radius: 0 4px 4px 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.callout strong { color: var(--fg); }
+
+/* stat row */
+.stats { display: flex; flex-wrap: wrap; gap: 12px; margin: 1.2em 0; }
+.stat {
+  flex: 1 1 130px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--bg-card);
+  padding: 11px 13px;
+}
+.stat .num { font-size: 23px; font-weight: 600; letter-spacing: -0.01em; font-family: var(--sans); }
+.stat .lbl { font-family: var(--sans); font-size: 12px; color: var(--fg-soft); margin-top: 2px; line-height: 1.35; }
+
+/* figures */
+figure { margin: 1.7em 0; }
+figure img {
+  display: block; width: 100%; height: auto;
+  border: 1px solid var(--line); border-radius: 4px; background: #fff;
+}
+figure figcaption {
+  font-family: var(--sans); font-size: 13px; color: var(--fg-soft);
+  line-height: 1.45; margin-top: 8px;
+}
+figure figcaption b, figure figcaption strong { color: var(--fg); }
+.fig-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 1.7em 0; }
+.fig-row figure { margin: 0; }
+@media (max-width: 600px) { .fig-row { grid-template-columns: 1fr; } }
+
+/* clean tables */
+main.content table {
+  border-collapse: collapse; width: 100%;
+  font-family: var(--sans); font-size: 13.5px; margin: 1.2em 0;
+}
+main.content th, main.content td {
+  border-bottom: 1px solid var(--line); padding: 7px 10px;
+  text-align: left; vertical-align: top;
+}
+main.content thead th { border-bottom: 2px solid var(--line); font-weight: 600; color: var(--fg); }
+.pass { color: #137333; font-weight: 600; }
+.fail { color: var(--accent); font-weight: 600; }

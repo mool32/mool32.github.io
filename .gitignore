@@ -21,3 +21,6 @@ Thumbs.db
 
 # Working notes (kept locally, not in repo)
 _landing_work/
+preview_nn-as-sensor.html
+_preview/
+.claude/

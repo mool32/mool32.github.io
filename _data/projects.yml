@@ -91,6 +91,10 @@
       url: "https://github.com/mool32/eeg-connectivity-contrast"
       summary: "18 metrics tested across 5 independent EEG datasets, 126 subjects total. No metric replicates across datasets; the strongest within-subject signal (DERCo wPLI alpha CV) reverses direction on ZuCo. A universal zero-calibration EEG comprehension detector does not exist with current metrics."
       status: "honest negative result"
+    - title: "Neural-network fitting as a structure sensor — a pre-registered negative"
+      url: "https://mool32.github.io/nn-as-sensor/"
+      summary: "Can an autoencoder's fitting process sense a biological axis it was never shown? Pre-registered (A∧B∧C∧D, leave-donors-out) on immune aging (GSE233321, 167 donors). The latent never beats matched linear PCA at recovering age (0/2 across seeds × dims); training erodes the signal; a synthetic positive control localises the exact regime where the method would win — high linear rank, low intrinsic dimension — which single-cell data does not occupy. The unsupervised latent independently re-derives the perceptome eigenspace (CCA p=0.001) but not its aging axis."
+      status: "honest negative result · prototype confirmed, write-up in progress"
 
 - category: AI-collaborative research methodology
   blurb: "A framework for doing science in active collaboration with AI — preregistration discipline, sign conventions, locked-vs-working artifacts, AI-friendly publishing — with this portfolio as the worked-example track. First concrete pre-registered study under the framework is now public."

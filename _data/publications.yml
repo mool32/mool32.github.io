@@ -160,3 +160,14 @@
   abstract: "Honest negative result. 18 metrics tested across 5 independent EEG datasets totaling 126 subjects, after a promising single-dataset finding (CCI window-level d = +0.564). No metric replicates across datasets; the strongest follow-up signal (wPLI alpha CV on DERCo, p = 0.015) reverses direction on ZuCo and shows null effects on STEW and Speech-in-Noise. Universal zero-calibration EEG comprehension detection is not supported."
   selected: false
   status: "negative result, public report"
+
+- key: spiro2026nnsensor
+  title: "Neural-network fitting as a structure sensor: a pre-registered negative on immune aging"
+  authors: "Spiro, T."
+  year: 2026
+  venue: "Technical report"
+  abbr: report
+  code: "https://mool32.github.io/nn-as-sensor/"
+  abstract: "Honest negative result. A pre-registered test (A∧B∧C∧D, leave-donors-out) of whether an autoencoder's unsupervised fit can recover donor age from immune scRNA-seq (GSE233321, 167 donors). The latent never beats a matched linear PCA at recovering age (0/2 across two seeds × latent dims) and training erodes the signal; a synthetic positive control localises the regime where the method would win — high linear rank, low intrinsic dimension — which single-cell data does not occupy. The unsupervised latent independently re-derives the perceptome eigenspace (cross-validated CCA, all p = 0.001) but not its aging axis (orthogonal to the reference inflammaging direction)."
+  selected: false
+  status: "pre-registered negative result, prototype confirmed; write-up in progress"
