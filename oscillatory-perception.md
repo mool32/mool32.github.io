@@ -2,6 +2,7 @@
 layout: default
 title: "Oscillation as a constitutive substrate for perception"
 description: "A multi-phase, pre-registered dissection of whether a perpetually-circling system of coupled networks is functional, not decorative. Built on a Stuart–Landau triad and a trained GRU triad. The motor is real and trainable; it is not a memory store; it is a phase regulator with a Hopf-universal code; and the one irreducibly-active ingredient of the whole thing is directed rotation — broken time-reversal symmetry."
+image: /assets/img/oscillatory/linkedin_hero.png
 permalink: /oscillatory-perception/
 ---
 
