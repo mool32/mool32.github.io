@@ -1,4 +1,7 @@
 - date: "Jun 2026"
+  text: "[Oscillation as a constitutive substrate for perception](/oscillatory-perception/) — a multi-phase pre-registered dissection on a Stuart–Landau triad and a trained GRU triad. A trainable triad self-organizes a coupling-maintained 120° rotating limit cycle and self-sustains it with the loss off, but it is NOT a memory store (the coupling that holds the cycle suppresses capacity — the founding hypothesis refuted). It IS a phase regulator with a Hopf-universal temporal code, emergent in the trained GRU. The earned law: an oscillation's existence is cheap; its directed rotation — the breaking of time-reversal symmetry — is the one irreducibly-active ingredient."
+
+- date: "Jun 2026"
   text: "[Neural-network fitting as a structure sensor](/nn-as-sensor/) — a pre-registered negative. An autoencoder's unsupervised fit does not beat matched linear PCA at recovering donor age from immune scRNA-seq (GSE233321, 167 donors), and training erodes the signal; a synthetic positive control pins the exact regime where the method would win. The latent independently re-derives the [perceptome](https://github.com/mool32/perceptome) eigenspace (CCA p = 0.001) but not its aging axis."
 
 - date: "May 2026"

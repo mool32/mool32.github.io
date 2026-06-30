@@ -19,6 +19,10 @@
       url: "https://github.com/mool32/oscillatory-nfl-cancer"
       summary: "Algorithmic extraction of 128 NFLs from 159 KEGG signaling networks. NFL genes show 59-fold CGC enrichment over non-NFL same-pathway genes (p = 9 × 10⁻⁴⁴). Irreversible Authority metric predicts cancer gene fraction with Spearman ρ = 0.83."
       status: "manuscript in preparation"
+    - title: "Oscillation as a constitutive substrate for perception"
+      url: "https://mool32.github.io/oscillatory-perception/"
+      summary: "Multi-phase pre-registered dissection of whether a perpetually-circling triad of coupled networks is functional, not decorative — on a Stuart–Landau triad and a trained GRU triad. A trainable triad self-organizes a coupling-maintained 120° rotating limit cycle (5/5 seeds, self-sustaining with the loss off); it is NOT a memory store (the coupling that holds the cycle suppresses capacity — founding hypothesis refuted); it IS a phase regulator carrying a Hopf-universal temporal code (normalized iPRC λ-invariant to CV ~3×10⁻⁵), emergent in the trained GRU (shape-match 0.999). The deepest law: an oscillation's existence is cheap (conservation / loss / blind flow) but its directed rotation — broken time-reversal symmetry — is the one irreducibly-active ingredient; on a dissipative map, smooth oscillation requires a complex eigen-pair."
+      status: "research program · spine + dissection zoo · central hypothesis refuted, sharper law earned"
 
 - category: Comparative biology of neural networks
   blurb: "Applying biological methods (DFE, population genetics, epistasis) to neural networks. Almost-biological experiments on trained transformers — same statistical apparatus that population geneticists use on yeast and flies."

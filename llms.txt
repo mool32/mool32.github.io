@@ -58,6 +58,17 @@ one — Cellular perception, centered on the perceptome framework and toolkit
   genes show 59-fold CGC enrichment over non-NFL same-pathway genes
   (p=9×10⁻⁴⁴). Irreversible Authority metric predicts cancer fraction with
   Spearman ρ=0.83.
+- [Oscillation as a constitutive substrate for perception](https://mool32.github.io/oscillatory-perception/):
+  Multi-phase pre-registered dissection on a Stuart–Landau triad and a trained
+  GRU triad of whether a perpetually-circling system of coupled networks is
+  functional, not decorative. A trainable triad self-organizes a coupling-
+  maintained 120° rotating limit cycle (5/5 seeds, self-sustaining with the loss
+  off); it is NOT a memory store (the coupling that holds the cycle suppresses
+  capacity — founding hypothesis refuted); it IS a phase regulator with a Hopf-
+  universal temporal code (normalized iPRC λ-invariant, CV~3×10⁻⁵), emergent in
+  the trained GRU (shape-match 0.999). Deepest law: an oscillation's existence is
+  cheap (conservation / loss / blind flow) but its directed rotation — broken
+  time-reversal symmetry — is the one irreducibly-active ingredient.
 
 ### 2. Comparative biology of neural networks
 Biological methods (DFE, population genetics, epistasis) applied to neural
