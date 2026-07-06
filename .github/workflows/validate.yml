@@ -1,0 +1,32 @@
+name: validate
+
+# Guards the data layer on every push / PR. GitHub Pages still builds the site
+# natively; this job just refuses to let papers.bib, the YAML data, and the
+# generated publications.yml drift out of sync or out of the controlled vocab.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install pyyaml
+
+      - name: publications.yml is regenerated from papers.bib
+        run: |
+          python3 scripts/gen_publications.py
+          git diff --exit-code -- _data/publications.yml \
+            || { echo "::error::_data/publications.yml is stale — run scripts/gen_publications.py and commit"; exit 1; }
+
+      - name: data layer passes validation
+        run: python3 scripts/validate.py

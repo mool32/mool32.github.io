@@ -1,0 +1,24 @@
+# Controlled vocabulary for the `stage` field.
+#
+# `stage` is the machine-readable lifecycle stage, set on every publication
+# (in papers.bib) and every project (_data/projects.yml). scripts/validate.py
+# fails the build if any `stage` is not one of the keys below.
+#
+# `stage` is the controlled value; the free-text `status` (publications) and
+# `summary`/`status` (projects) carry the specific human detail that renders on
+# the site. Keep the two consistent — the validator warns when they disagree.
+#
+#   key -> { label: human-readable form, order: lifecycle rank (low = earlier) }
+
+scaffolding:      { label: "Scaffolding",               order: 10 }
+pilot:            { label: "Pilot calibration",         order: 20 }
+in-progress:      { label: "In progress",               order: 30 }
+in-preparation:   { label: "Manuscript in preparation", order: 40 }
+submission-ready: { label: "Submission-ready",          order: 50 }
+report:           { label: "Public report",             order: 55 }
+submitted:        { label: "Submitted",                 order: 60 }
+under-review:     { label: "Under review",              order: 70 }
+preprint:         { label: "Preprint",                  order: 80 }
+software-release: { label: "Software release",          order: 85 }
+live:             { label: "Live",                       order: 88 }
+published:        { label: "Published",                 order: 90 }

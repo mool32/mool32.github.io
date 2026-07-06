@@ -29,10 +29,34 @@
   doi      = {10.5281/zenodo.20113468},
   url      = {https://doi.org/10.5281/zenodo.20113468},
   code     = {https://github.com/mool32/perceptome},
-  abstract = {A Python toolkit treating 44 cellular signaling pathways (NF-kB, mTOR, UPR, p53, nuclear receptors, ...) as a cell's perceptual repertoire. Three capabilities other tools don't directly provide: (1) a 9-PC eigenspace derived from 154 normal human cell types (Human Protein Atlas) where any cell can be located on the same map; (2) a capacity-floor predictor that says whether a cell type and pathway will ramp under stimulus or is already saturated; (3) a validity scorecard with three null controls (random-gene panel, housekeeping, cell cycle) that catches common perturbation artifacts before interpretation. Headline empirical result: an 8-cell attractor cluster (gastric chief, pancreatic acinar, parietal, megakaryocytes, cytotrophoblasts, migrating cytotrophoblasts, late primary spermatocytes, gastric progenitor) toward which 11 cancers from 11 organ systems converge during transformation — independently replicated on the Sun et al. 2021 paired HCC cohort. The tool implements only what the underlying multi-year pre-registered research program validated and deliberately excludes operations that were tested and falsified.},
+  abstract = {A Python toolkit treating 44 cellular signaling pathways (NF-kB, mTOR, UPR, p53, nuclear receptors, ...) as a cell's perceptual repertoire. Three capabilities other tools don't directly provide: (1) a 9-PC eigenspace derived from 154 normal human cell types (Human Protein Atlas) where any cell can be located on the same map; (2) a capacity-floor predictor that says whether a cell type and pathway will ramp under stimulus or is already saturated; (3) a validity scorecard with three null controls (random-gene panel, housekeeping, cell cycle) that catches common perturbation artifacts before interpretation. The framework underpins the cancer-convergence result reported separately (Zenodo 10.5281/zenodo.20542130): malignant cells of 25 cancers converge on the placental cytotrophoblast, a normal invasive cell state that malignancy deepens within patients. The tool implements only what the underlying multi-year pre-registered research program validated and deliberately excludes operations that were tested and falsified.},
+  teaser   = {A Python toolkit treating 44 cellular signaling pathways (NF-κB, mTOR, UPR, p53, nuclear receptors, …) as a cell's perceptual repertoire. Three capabilities other tools don't directly provide: (1) a 9-PC eigenspace derived from 154 normal human cell types (Human Protein Atlas) where any cell — yours, a tumor, a drug-treated — can be located on the same map; (2) a capacity-floor predictor — given a cell type and a pathway, will it ramp under stimulus or is it already saturated; (3) a validity scorecard with three null controls (random-gene panel, housekeeping, cell cycle) that catches common perturbation artifacts before interpretation. It is the toolkit behind the cancer-convergence finding — 25 cancers converge on the placental cytotrophoblast (Zenodo 10.5281/zenodo.20542130) — and implements only what that multi-year pre-registered program validated, deliberately excluding operations that were tested and falsified.},
   selected = {true},
   bibtex_show = {true},
-  status   = {public-release-v0.3}
+  order    = {1},
+  venue    = {Software release (v0.3)},
+  stage    = {software-release},
+  status   = {public release v0.3 (May 2026)}
+}
+
+
+@misc{spiro2026cytotrophoblast,
+  abbr     = {preprint},
+  title    = {Cancers of all lineages converge on the placental cytotrophoblast, a normal invasive cell state that malignancy deepens},
+  author   = {Spiro, Theodor},
+  year     = {2026},
+  howpublished = {Preprint (Zenodo)},
+  doi      = {10.5281/zenodo.20542130},
+  url      = {https://doi.org/10.5281/zenodo.20542130},
+  abstract = {A coordinate system for cellular state is built from 44 transcriptional modules scored across 154 normal human cell types (Human Protein Atlas), using single-cell RNA exclusively and no cancer data; the resulting nine-dimensional eigenspace recovers known biology before any cancer is introduced. Projecting 25 quality-controlled single-cell cancer datasets, the malignant compartment of every major lineage converges onto one small region of normal-cell physiology, contracting the program space 6.3-fold relative to the cancers' near-orthogonal tissues of origin. A recurrence-and-depth ranking identifies a two-cell core: the placental cytotrophoblast -- the complexity-robust, lineage-independent anchor and the normal cell that physiologically invades, proliferates, and evades immunity -- with the megakaryocyte a lineage-restricted secondary. The state is not unique to cancer: some normal secretory epithelia (healthy lung) occupy it as fully as tumors. What is specifically malignant emerges within patients -- in matched tumor-normal pairs, malignant epithelium converges about sixfold deeper than the patient's own normal tissue (colorectal 43/46 patients, paired P < 1e-12; replicated in kidney and liver, 77/86 patients; absent in the one high-baseline tissue, lung). Cancer thus reaches a pre-existing, tissue-variable normal cell state and deepens it, linking malignancy quantitatively and geometrically to normal placental and developmental biology rather than to a uniquely cancerous program.},
+  teaser   = {A coordinate map built from 44 signaling modules over 154 normal cell types — no cancer data — onto which the malignant cells of 25 cancers converge. The anchor is the placental cytotrophoblast, a normal cell state that naturally invades, proliferates, and evades immunity; within patients, malignancy deepens the state ~6× over matched normal tissue (colorectal 43/46, paired P < 10⁻¹²). Not a uniquely cancerous program but a normal placental/developmental one, pushed deeper.},
+  bibtex_show = {true},
+  order    = {0},
+  venue    = {Preprint (Zenodo)},
+  stage    = {preprint},
+  selected = {true},
+  headline = {true},
+  status   = {preprint on Zenodo (DOI 10.5281/zenodo.20542130)}
 }
 
 
@@ -51,9 +75,14 @@
   code     = {https://github.com/mool32/ecg-spectral-exponents},
   pdf      = {ecg_spectral_exponents_spiro_2026.pdf},
   abstract = {Spectral exponent beta extracted from 412,730 twelve-lead recordings across three continents (PTB-XL, Chapman-Shaoxing, CODE-15). beta is diagnostic of cardiac conduction anatomy: CLBBB vs CRBBB AUC=0.982 (Germany), 0.982 (China), 0.979 (Brazil), versus 0.688 for QRS duration alone. Aging flattens the spectrum; disease steepens it. Honest null on independent mortality prediction (HR=1.02, p=0.83).},
+  teaser   = {Spectral exponent β extracted from 412,730 twelve-lead recordings across three continents (PTB-XL, Chapman-Shaoxing, CODE-15%). β is diagnostic of cardiac conduction anatomy: CLBBB vs CRBBB AUC = 0.982 (Germany), 0.982 (China), 0.979 (Brazil). Aging flattens the spectrum; disease steepens it. Honest null on independent mortality prediction (HR = 1.02, p = 0.83).},
   selected = {true},
   bibtex_show = {true},
-  status   = {preprint-submitted, bioRxiv ID BIORXIV/2026/717157}
+  order    = {3},
+  venue    = {bioRxiv (submitted)},
+  stage    = {preprint},
+  headline = {true},
+  status   = {preprint on Zenodo; submitted to bioRxiv (BIORXIV/2026/717157)}
 }
 
 @article{spiro2026waveform,
@@ -67,9 +96,13 @@
   code     = {https://github.com/mool32/waveform-asymmetry-aging},
   pdf      = {waveform_asymmetry_spiro_2026.pdf},
   abstract = {Peak-trough asymmetry of EEG oscillations across five frequency bands in 215 (LEMON) and 608 (Dortmund Vital Study) adults, with 208-subject 5-year longitudinal follow-up. Beta-band asymmetry decreases with age (r=-0.326 LEMON, r=-0.314 Dortmund); effect size exceeds classical alpha slowing. Theta spatial entropy predicts memory independent of age.},
+  teaser   = {Peak-trough asymmetry of EEG oscillations across five frequency bands in 215 (LEMON) and 608 (Dortmund Vital Study) adults, with 208-subject 5-year longitudinal follow-up. Beta-band asymmetry decreases with age (r = −0.326 LEMON, r = −0.314 Dortmund); effect size exceeds classical alpha slowing. Theta spatial entropy predicts memory independent of age.},
   selected = {true},
   bibtex_show = {true},
-  status   = {under-review, Frontiers in Aging Neuroscience}
+  order    = {5},
+  venue    = {Frontiers in Aging Neuroscience (under review)},
+  stage    = {under-review},
+  status   = {under review at Frontiers in Aging Neuroscience}
 }
 
 @article{spiro2026pitissue,
@@ -83,9 +116,14 @@
   code     = {https://github.com/mool32/pi-tissue-aging},
   pdf      = {pi_tissue_spiro_2026.pdf},
   abstract = {Three-level variance decomposition of bulk transcriptomes from 263 GTEx v8 donors (ages 20-79) plus single-cell data from Tabula Muris Senis, Calico rat caloric-restriction atlas, and a rhesus macaque cross-species atlas. Tissue identity is preserved across forty years of aging; the signature is systemic noise, not selective accumulation. Caloric restriction acts as a noise filter, not a structure restorer. Cross-species lifespan scaling (alpha=-1.02, R^2=0.90).},
+  teaser   = {Three-level variance decomposition on bulk transcriptomes from 263 GTEx v8 donors plus single-cell data from Tabula Muris Senis, Calico rat caloric-restriction atlas, and a rhesus macaque cross-species atlas. Tissue identity is preserved across forty years of aging; the signature is systemic noise, not selective accumulation. Caloric restriction acts as a noise filter, not a structure restorer. Cross-species lifespan scaling (α = −1.02, R² = 0.90).},
   selected = {true},
   bibtex_show = {true},
-  status   = {preprint-submitted, post-review v4}
+  order    = {4},
+  venue    = {bioRxiv (post-review v4)},
+  stage    = {preprint},
+  headline = {true},
+  status   = {preprint on Zenodo; post-review v4}
 }
 
 @misc{spiro2026oscillatorycancer,
@@ -97,8 +135,12 @@
   code     = {https://github.com/mool32/oscillatory-cancer-framework},
   pdf      = {oscillatory_cancer_framework_spiro_2026.pdf},
   abstract = {157 genes across 14 oscillatory signaling pathways classified into rise-phase and recovery-phase components by temporal role only. Rise genes enriched for oncogenes, recovery for tumor suppressors (OR=27.5, p=3.6e-9). 12/12 pathways with testable cancer genes match the prediction; 12 anti-coupled cases in growth-inhibitory pathways (p53, TGF-beta) match the predicted inversion. On 22 divergent cases between temporal and naive biochemical classification, temporal framework correct in 19/22 (86 percent). GoF drug targets concentrated in rise arm (28/33 = 85 percent, p=3.3e-5).},
+  teaser   = {157 genes across 14 oscillatory signaling pathways classified into rise-phase and recovery-phase by temporal role only. Rise genes enriched for oncogenes, recovery for tumor suppressors (OR = 27.5, p = 3.6 × 10⁻⁹); 12/12 pathways match the prediction. Predicted inversions in growth-inhibitory pathways (p53, TGF-β) confirmed. On 22 divergent cases, the temporal framework is correct in 19/22 (86%) vs 3/22 (14%) for naive biochemical classification.},
   bibtex_show = {true},
-  status   = {preprint-public-on-github, github-public}
+  order    = {10},
+  venue    = {Preprint},
+  stage    = {preprint},
+  status   = {preprint; public on GitHub}
 }
 
 @misc{spiro2026nflcancer,
@@ -110,8 +152,12 @@
   code     = {https://github.com/mool32/oscillatory-nfl-cancer},
   pdf      = {oscillatory_nfl_cancer_spiro_2026.pdf},
   abstract = {Algorithmic extraction of all short negative-feedback loops (NFLs) from 159 KEGG signaling networks. 128 unique motifs collapse into 14 pathway-level oscillatory modules; NFL genes are 59-fold enriched for Cancer Gene Census membership compared to non-NFL genes in the same pathways (Fisher exact p=9e-44). Conservation gradient from universal eukaryotic loops (ERK/DUSP, Ca2+/SERCA, ~1500 Mya) to vertebrate-specific (Notch, JAK-STAT, ~435 Mya). Irreversible Authority (IA) metric predicts cancer gene fraction across modules with Spearman rho=0.83. Eigenspace projection identifies 20 novel cancer gene candidates, 13 (65 percent) IntOGen-validated.},
+  teaser   = {Algorithmic extraction of 128 unique negative feedback loops from 159 KEGG signaling networks, organized into 14 pathway-level modules. NFL genes are 59-fold enriched for Cancer Gene Census membership over non-NFL genes in the same pathways (Fisher exact p = 9 × 10⁻⁴⁴). Irreversible Authority metric predicts cancer gene fraction with Spearman ρ = 0.83 across modules. Eigenspace projection identifies 20 novel cancer candidates, 13 (65%) IntOGen-validated.},
   bibtex_show = {true},
-  status   = {manuscript-in-preparation, github-public}
+  order    = {11},
+  venue    = {Manuscript, in preparation},
+  stage    = {in-preparation},
+  status   = {manuscript in preparation}
 }
 
 
@@ -128,9 +174,13 @@
   code     = {https://github.com/mool32/clonal-crystallization-aging},
   pdf      = {clonal_crystallization_spiro_2026.pdf},
   abstract = {A two-metric framework (Gini coefficient and effective number of contributing components, eff_N) applied jointly to cell-type proportion distributions in mouse tissues and to head-importance distributions across Pythia-410M training. Pythia moves through (Delta-Gini, Delta-eff_N) by (+0.145, -45.5) over 143k training steps; mouse bone marrow on FACS and Droplet platforms moves in the same quadrant of the plane (+0.088, -2.19 / +0.038, -0.54). Kidney and Limb Muscle also crystallize at coarse granularity; Lung and Spleen disperse, replicated on Kimmel 2019. Granularity is a primary parameter: Kidney TMS sub-cell-type analysis shows podocytes crystallize while macrophages disperse. Caloric restriction in rat bone marrow rescues 64 percent of the Gini drift and 57 percent of the eff_N drift (P(rescue greater than 0) = 1.000). A specific substrate-independent compositional signature, narrower than full DFE universality (companion paper arXiv:2604.10571).},
+  teaser   = {A two-metric framework (Gini + effective N) applied jointly to mouse cell-type proportions and to Pythia-410M head-importance distributions. Pythia moves through (ΔGini, Δeff_N) by (+0.145, −45.5) over 143k steps; bone marrow on FACS and Droplet platforms moves in the same quadrant. Caloric restriction in rat bone marrow rescues 64% of the Gini drift. A specific substrate-independent signature, narrower than full DFE universality.},
   selected = {true},
   bibtex_show = {true},
-  status   = {manuscript-in-preparation, github-public}
+  order    = {6},
+  venue    = {Manuscript, in preparation},
+  stage    = {in-preparation},
+  status   = {manuscript in preparation}
 }
 
 
@@ -147,9 +197,13 @@
   code     = {https://github.com/mool32/functional-differentiation-dfe},
   pdf      = {functional_differentiation_dfe_spiro_2026.pdf},
   abstract = {Ablation studies of 144 identity-tracked attention heads, 24 transformer layers, and 30 distributed-noise perturbations at each of 8 checkpoints (step 512 to step 143000) of Pythia 410M-deduped. 1,584 ablations total; the DFE shape converges to a universal form during training.},
+  teaser   = {Ablation studies of 144 identity-tracked attention heads, 24 transformer layers, and 30 distributed-noise perturbations at each of 8 checkpoints (step 512 → 143,000) of Pythia 410M-deduped — 1,584 ablations. The DFE shape evolves from delta-peak-with-outliers to heavy-tailed Student's t (df ≈ 2.3, β ≈ 0.6 within biological range). 39% of eventually-critical heads emerge from noise; only 4% are born critical. L8H9 undergoes phase-transition-like specialization between steps 4k–8k.},
   selected = {true},
   bibtex_show = {true},
-  status   = {preprint, paper-2-llm-track}
+  order    = {7},
+  venue    = {Manuscript, submission-ready},
+  stage    = {submission-ready},
+  status   = {manuscript; submission-ready}
 }
 
 @misc{spiro2026epistasisheads,
@@ -160,8 +214,12 @@
   howpublished = {In preparation},
   code     = {https://github.com/mool32/epistasis-transformer-heads},
   abstract = {Pairwise head-ablation interaction maps (epsilon_AB = Delta_AB - (Delta_A + Delta_B)) on Pythia 410M and OLMo2 1B across the full training trajectory. Extends the functional-differentiation DFE work with a population-genetics tool: epistasis. 78 percent of significant top-30 pairs in Pythia 410M show epsilon_loss greater than 0 (synthetic-lethal-like in Costanzo's terminology).},
+  teaser   = {Pairwise head-ablation interaction maps (ε_AB = Δ_AB − (Δ_A + Δ_B)) on Pythia 410M and OLMo-2 1B across the full training trajectory. 78% of significant top-30 pairs in Pythia 410M show ε_loss > 0 (synthetic-lethal-like in Costanzo's terminology). The epistasis transition co-locates with the Paper 2 DFE crystallization (training steps 512–1,000), rejecting lottery-ticket emergence.},
   bibtex_show = {true},
-  status   = {phase-2-in-progress}
+  order    = {12},
+  venue    = {In preparation},
+  stage    = {in-progress},
+  status   = {in progress; multi-phase (Phase 2)}
 }
 
 @article{spiro2026aievolution,
@@ -177,9 +235,13 @@
   url      = {https://arxiv.org/abs/2604.10571},
   code     = {https://github.com/mool32/ai-evolution-universal-signatures},
   abstract = {935 ablation experiments compiled from 161 publications. The distribution of fitness effects of architectural modifications matches biological DFEs across multiple organisms (heavy-tailed Student's t; 68 percent deleterious / 19 percent neutral / 13 percent beneficial for major ablations, n=568); architectural diversification follows logistic dynamics with punctuated equilibria matching paleontological radiation patterns; 14 architectural traits were independently invented 3-5 times in parallel with biological convergences. Evolutionary statistics are shaped by fitness-landscape topology, not selection mechanism.},
+  teaser   = {935 ablation experiments compiled from 161 publications. The DFE of architectural modifications matches biological DFEs (heavy-tailed Student's t; 68% deleterious / 19% neutral / 13% beneficial for major ablations); architectural diversification follows logistic dynamics with punctuated equilibria; 14 architectural traits were independently invented 3–5 times in parallel with biological convergences.},
   selected = {true},
   bibtex_show = {true},
-  status   = {preprint-on-arxiv}
+  order    = {2},
+  venue    = {arXiv:2604.10571},
+  stage    = {preprint},
+  status   = {preprint on arXiv}
 }
 
 
@@ -196,9 +258,13 @@
   code     = {https://github.com/mool32/ai-oracle-fingerprint},
   pdf      = {oracle_fingerprint_spiro_2026.pdf},
   abstract = {Three studies on whether the "wisdom of crowds" survives consultation of a small set of LLMs. Study 1: GPT-4o, Claude, and Gemini show pairwise error correlation r=0.78 on 568 resolved binary Metaculus forecasts. Study 2: human community forecasts move in the LLM-predicted direction (r=0.20, p=0.007), but the shift is fully explained by rational updating toward ground truth (post-control beta=0.023, p=0.36, NS). Study 3: pre-ChatGPT human biases already strongly resembled the LLM pattern (r=0.87); post-ChatGPT the resemblance weakened (r=-0.28). LLMs inherited human biases rather than introducing novel ones; epistemic monoculture is built but not yet activated.},
+  teaser   = {Three studies on whether the wisdom of crowds survives consultation of a small set of LLMs. GPT-4o, Claude, and Gemini show pairwise error correlation r = 0.78 on 568 resolved binary Metaculus forecasts (Study 1). Community forecasts move in the LLM-predicted direction (r = 0.20, p = 0.007), but the shift is fully explained by rational updating toward ground truth (Study 2). Pre-ChatGPT human biases already strongly resembled the LLM pattern (r = 0.87); post-ChatGPT the resemblance weakened (r = −0.28) — LLMs inherited human biases rather than introducing novel ones (Study 3).},
   selected = {true},
   bibtex_show = {true},
-  status   = {manuscript-in-preparation, github-public}
+  order    = {8},
+  venue    = {Manuscript, in preparation},
+  stage    = {in-preparation},
+  status   = {manuscript in preparation}
 }
 
 
@@ -215,9 +281,14 @@
   code     = {https://github.com/mool32/dat-ru-paper},
   url      = {https://mool32.github.io/dat-ru/},
   abstract = {Russian-language adaptation of the Divergent Association Task (Olson et al., 2021). 21,159 submissions; Cronbach's alpha=0.899; split-half reliability 0.696; no measurable practice effect (i.i.d. sampling model preferred over mixed-effects). Strongest predictor: semantic category diversity (r=0.47). Theoretical ceiling 110.5 (best human attempt: 104.8).},
+  teaser   = {Russian-language adaptation of the Divergent Association Task (Olson et al., 2021). 21,159 submissions; Cronbach's α = 0.899; split-half reliability 0.696; no measurable practice effect. Strongest predictor: semantic category diversity (r = 0.47). Theoretical ceiling 110.5 (best human attempt: 104.8). Live instrument runs at mool32.github.io/dat-ru.},
   selected = {true},
   bibtex_show = {true},
-  status   = {manuscript-ready, live-instrument-on-github-pages}
+  order    = {9},
+  venue    = {Manuscript},
+  stage    = {submission-ready},
+  demo     = {https://mool32.github.io/dat-ru/},
+  status   = {manuscript ready; live instrument deployed}
 }
 
 
@@ -233,6 +304,26 @@
   howpublished = {Technical report},
   code     = {https://github.com/mool32/eeg-connectivity-contrast},
   abstract = {18 candidate connectivity and spectral metrics tested across 5 independent EEG datasets totaling 126 subjects, after a promising initial finding (CCI d=+0.564 on a small distance-learning dataset). No metric replicated across datasets; the strongest follow-up signal (wPLI alpha CV on DERCo, p=0.015) reversed direction on ZuCo and showed null effects on two other datasets. Negative result with implications for proposed universal EEG biomarkers of comprehension.},
+  teaser   = {Honest negative result. 18 metrics tested across 5 independent EEG datasets totaling 126 subjects, after a promising single-dataset finding (CCI window-level d = +0.564). No metric replicates across datasets; the strongest follow-up signal (wPLI alpha CV on DERCo, p = 0.015) reverses direction on ZuCo and shows null effects on STEW and Speech-in-Noise. Universal zero-calibration EEG comprehension detection is not supported.},
   bibtex_show = {true},
-  status   = {report-ready, write-up-only}
+  order    = {13},
+  venue    = {Technical report},
+  stage    = {report},
+  status   = {public report; honest negative result}
+}
+
+@misc{spiro2026nnsensor,
+  abbr     = {report},
+  title    = {Neural-network fitting as a structure sensor: a pre-registered negative on immune aging},
+  author   = {Spiro, Theodor},
+  year     = {2026},
+  howpublished = {Technical report},
+  code     = {https://mool32.github.io/nn-as-sensor/},
+  abstract = {Honest negative result. A pre-registered test (A and B and C and D, leave-donors-out) of whether an autoencoder's unsupervised fit can recover donor age from immune scRNA-seq (GSE233321, 167 donors). The latent never beats a matched linear PCA at recovering age (0/2 across two seeds times latent dimensions) and training erodes the signal; a synthetic positive control localises the regime where the method would win - high linear rank, low intrinsic dimension - which single-cell data does not occupy. The unsupervised latent independently re-derives the perceptome eigenspace (cross-validated CCA, all p=0.001) but not its aging axis (orthogonal to the reference inflammaging direction).},
+  teaser   = {Honest negative result. A pre-registered test (A∧B∧C∧D, leave-donors-out) of whether an autoencoder's unsupervised fit can recover donor age from immune scRNA-seq (GSE233321, 167 donors). The latent never beats a matched linear PCA at recovering age (0/2 across two seeds × latent dims) and training erodes the signal; a synthetic positive control localises the regime where the method would win — high linear rank, low intrinsic dimension — which single-cell data does not occupy. The unsupervised latent independently re-derives the perceptome eigenspace (cross-validated CCA, all p = 0.001) but not its aging axis (orthogonal to the reference inflammaging direction).},
+  bibtex_show = {true},
+  order    = {14},
+  venue    = {Technical report},
+  stage    = {in-progress},
+  status   = {pre-registered negative; prototype confirmed, write-up in progress}
 }

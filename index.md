@@ -16,9 +16,13 @@ description: Theodor Spiro — independent researcher at Vaika Inc.
   </div>
 
   <p class="positioning">
-    Currently centered on <strong><a href="https://github.com/mool32/perceptome">perceptome</a></strong>
+    The current flagship is a cancer-convergence finding:
+    <strong>malignant cells of 25 cancers of all lineages converge on the placental
+    cytotrophoblast</strong>, a normal invasive cell state that malignancy deepens
+    within patients (<a href="https://doi.org/10.5281/zenodo.20542130">Zenodo</a>). It is
+    built on <strong><a href="https://github.com/mool32/perceptome">perceptome</a></strong>
     — a framework treating cellular signaling pathways as a perceptual repertoire,
-    with a Python toolkit (44 modules, 9-PC eigenspace, cancer attractor reference).
+    with a Python toolkit (44 modules, 9-PC eigenspace).
     Alongside: aging biomarkers across substrates (EEG, ECG, transcriptome),
     the comparative biology of neural networks (DFE and epistasis applied to LLM
     training), and a developing framework for doing science in active collaboration
@@ -58,11 +62,12 @@ Manuscripts and code are released on GitHub at
 
 ## Currently
 
-[perceptome v0.3](https://github.com/mool32/perceptome) is the active center
-of the work — a Python toolkit for cellular perception analysis with a 9-PC
-eigenspace, capacity-floor predictor, validity scorecard, and an 8-cell cancer
-attractor reference. A family of papers around the framework is in
-preparation. In parallel:
+The flagship is the [cancer-convergence paper](https://doi.org/10.5281/zenodo.20542130)
+— malignant cells of 25 cancers converge on the placental cytotrophoblast, a normal
+invasive cell state that malignancy deepens ~6× within patients. It is built on
+[perceptome](https://github.com/mool32/perceptome), the Python toolkit and framework
+for cellular perception analysis (9-PC eigenspace, capacity-floor predictor, validity
+scorecard); a substrate-generalization series feeds the next release. In parallel:
 [functional-differentiation DFE](https://github.com/mool32/functional-differentiation-dfe)
 manuscript writeup, the
 [epistasis](https://github.com/mool32/epistasis-transformer-heads) Tier-2

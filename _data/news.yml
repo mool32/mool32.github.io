@@ -1,3 +1,6 @@
+- date: "Jul 2026"
+  text: "[Cancers of all lineages converge on the placental cytotrophoblast](https://doi.org/10.5281/zenodo.20542130) — the cellular-perception flagship, archived on Zenodo. A coordinate map built from 44 signaling modules over 154 normal cell types (no cancer data) shows the malignant cells of 25 cancers converging onto one normal-cell region — the placental cytotrophoblast, a normal invasive state — which malignancy deepens ~6× within matched tumor–normal pairs (colorectal 43/46, paired P<10⁻¹²)."
+
 - date: "Jun 2026"
   text: "[Oscillation as a constitutive substrate for perception](/oscillatory-perception/) — a multi-phase pre-registered dissection on a Stuart–Landau triad and a trained GRU triad. A trainable triad self-organizes a coupling-maintained 120° rotating limit cycle and self-sustains it with the loss off, but it is NOT a memory store (the coupling that holds the cycle suppresses capacity — the founding hypothesis refuted). It IS a phase regulator with a Hopf-universal temporal code, emergent in the trained GRU. The earned law: an oscillation's existence is cheap; its directed rotation — the breaking of time-reversal symmetry — is the one irreducibly-active ingredient."
 

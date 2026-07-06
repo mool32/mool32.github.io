@@ -588,10 +588,11 @@ gh repo edit mool32/<repo> \
 
 | Bucket | Topics |
 |---|---|
-| Domain | `aging-research`, `neuroscience`, `cancer-genomics`, `transcriptomics`, `eeg`, `ecg`, `cognition`, `creativity` |
-| Method | `mechanistic-interpretability`, `signal-processing`, `population-genetics`, `dfe`, `epistasis`, `oscillatory-dynamics`, `network-analysis`, `functional-differentiation` |
+| Domain | `aging-research`, `neuroscience`, `cancer-genomics`, `transcriptomics`, `single-cell`, `signaling-pathways`, `eeg`, `ecg`, `cardiac-electrophysiology`, `cognition`, `creativity` |
+| Method | `mechanistic-interpretability`, `signal-processing`, `population-genetics`, `dfe`, `epistasis`, `functional-differentiation`, `evolution`, `oscillatory-dynamics`, `network-analysis`, `quality-control`, `metric-validation`, `psychometrics`, `forecasting` |
 | Object | `pythia`, `transformer`, `gtex`, `tabula-muris-senis`, `kegg`, `metaculus` |
-| Cross | `cross-domain`, `negative-result`, `in-progress`, `independent-research`, `reproducible-research`, `biomarkers` |
+| Type | `tool` (reusable method/software repo, not a single study) |
+| Cross | `cross-domain`, `negative-result`, `biomarkers`, `independent-research`, `reproducible-research` |
 
 Always include `independent-research` and `reproducible-research`. Pick 2–4
 domain/method tags. Pick 0–2 object tags. Use `cross-domain` only when
@@ -743,11 +744,23 @@ Before pushing the first commit:
 - [ ] Companion-paper cross-links in README header
 - [ ] Repo metadata set: description, homepage, 5–8 topics from the
       controlled vocabulary
-- [ ] Add bib entry to [`mool32.github.io/papers.bib`](https://github.com/mool32/mool32.github.io/blob/main/papers.bib)
-      and to `_data/publications.yml` (mirrors)
-- [ ] Add project entry to
-      [`mool32.github.io/_data/projects.yml`](https://github.com/mool32/mool32.github.io/blob/main/_data/projects.yml)
-      under the appropriate category
+- [ ] Add the BibTeX entry to
+      [`papers.bib`](https://github.com/mool32/mool32.github.io/blob/main/papers.bib)
+      — the **single source of truth** for publications. Set the site fields
+      (`venue`, `order`, `stage` from the controlled vocabulary, and
+      `selected`/`headline`/`demo` as applicable) alongside the citation fields
+- [ ] Regenerate the derived data: `python3 scripts/gen_publications.py`.
+      `_data/publications.yml` is a **generated artifact** — never hand-edit it;
+      commit `papers.bib` and the regenerated file together
+- [ ] Add a project entry to
+      [`_data/projects.yml`](https://github.com/mool32/mool32.github.io/blob/main/_data/projects.yml)
+      under the appropriate category, with a `stage` from
+      [`_data/statuses.yml`](https://github.com/mool32/mool32.github.io/blob/main/_data/statuses.yml)
+- [ ] Add a one-line news item to
+      [`_data/news.yml`](https://github.com/mool32/mool32.github.io/blob/main/_data/news.yml)
+      (newest first, `date: "Mon YYYY"`)
+- [ ] Run `python3 scripts/validate.py` and get **0 errors** before committing
+      (CI re-runs it on every push and blocks drift)
 - [ ] Verify the repo is reachable, the homepage URL does not 404, and
       the description renders correctly on the user's repo list
 
