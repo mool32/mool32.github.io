@@ -1,0 +1,24 @@
+{%- comment -%}
+  Renders a list of publication records.
+  Usage:  {% include pub-list.html pubs=some_filtered_array %}
+  Kept in one place so /publications/ and / cannot drift apart.
+{%- endcomment -%}
+<ul class="pub-list">
+{% for p in include.pubs %}
+  <li class="pub">
+    <div class="pub-title">{{ p.title }}</div>
+    <div class="pub-meta">
+      {% if p.abbr %}<span class="abbr">{{ p.abbr }}</span>{% endif %}
+      {{ p.authors }} · {{ p.year }} · <em>{{ p.venue }}</em>
+    </div>
+    <div class="pub-abstract">{{ p.abstract }}</div>
+    <div class="pub-links">
+      {% if p.arxiv %}<a href="{{ p.arxiv }}">arXiv</a>{% endif %}
+      {% if p.doi %}<a href="https://doi.org/{{ p.doi }}">DOI {{ p.doi }}</a>{% endif %}
+      {% if p.code %}<a href="{{ p.code }}">code</a>{% endif %}
+      {% if p.pdf %}<a href="{{ p.pdf }}">PDF</a>{% endif %}
+      {% if p.demo %}<a href="{{ p.demo }}">live demo</a>{% endif %}
+    </div>
+  </li>
+{% endfor %}
+</ul>

@@ -4,7 +4,12 @@
   <meta name="author" content="{{ site.author.name }}">
   <meta name="description" content="{{ page.description | default: site.description }}">
 
-  <title>{% if page.title and page.title != site.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  {%- comment -%}
+    Pages carry a short title ("Publications") and get " · Theodor Spiro" appended.
+    The home page carries a full descriptive title that already contains the name,
+    so it is used verbatim — no duplication, and it is what og:title picks up.
+  {%- endcomment -%}
+  <title>{% if page.title contains site.title %}{{ page.title }}{% elsif page.title and page.title != site.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
   {%- comment -%}
     jekyll-seo-tag emits canonical URL, Open Graph, Twitter Card, and a

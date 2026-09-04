@@ -1,23 +1,31 @@
 ---
 layout: default
 title: Methodology
-description: A framework for doing science in active collaboration with AI — preregistration discipline, sign conventions, locked-vs-working artifacts, AI-friendly publishing — applied across the mool32 portfolio.
+description: "How every claim in this portfolio is made checkable — hash-locked pre-registration, fixed sign conventions, negative results published in full, reproducible code, and machine-readable publishing. Includes explicit disclosure of AI use in the workflow."
 permalink: /methodology/
 ---
 
-# AI-collaborative research methodology
+# Research methodology — pre-registration, validation, reproducibility
 
-This document is the canonical reference for the **AI-collaborative research
-methodology framework** I am developing and applying across this portfolio.
-Preregistration discipline, sign conventions, locked-vs-working artifacts,
-code reproducibility, manuscript hygiene, and AI-friendly publishing are not
-separate practices — they are the same framework. Doing serious science in
-active collaboration with AI requires explicit machinery that prevents the
-predictable failure modes; that machinery is what this document specifies.
+This document is the canonical reference for how work in this portfolio is made
+**checkable**: predictions locked before the data are seen, sign conventions fixed
+in advance, negative results published in full, code that re-runs, and a record
+that is validated automatically rather than trusted.
+
+Preregistration discipline, sign conventions, locked-vs-working artifacts, code
+reproducibility, manuscript hygiene, and machine-readable publishing are not
+separate practices — they are one framework, and it exists to close a specific
+list of predictable failure modes.
+
+Part of that framework covers **working with AI systems as a research instrument**
+(§11): what they are used for, what they are deliberately not trusted with, and the
+guard-rails that make the difference verifiable rather than asserted. That is a
+component of the methodology, not the claim it rests on — the claim rests on the
+locked predictions and the published failures.
 
 The portfolio is the worked-example track. Standalone artifacts about the
 framework itself (writeups, papers) are in active development and will be
-listed under [Projects → AI-collaborative research methodology]({{ '/projects/' | relative_url }}#ai-collaborative-research-methodology)
+listed under [Projects → Research methodology and validation]({{ '/projects/' | relative_url }}#research-methodology-and-validation)
 as they appear. Until then, the framework is best read through this document
 plus the concrete repositories cited throughout.
 

@@ -11,8 +11,8 @@ Six directions, in this order. Cellular perception (the perceptome framework
 and toolkit) is currently the active center. Comparative biology of neural
 networks and aging research are the two long-running substantive threads.
 Cognition and social projects, methodological work (including a deliberate
-negative result), and an AI-collaborative research methodology framework
-round out the portfolio.
+negative result), and the validation framework behind all of it round out the
+portfolio.
 
 {% for section in site.data.projects %}
 <section class="proj-section">

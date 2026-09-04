@@ -29,6 +29,18 @@
   status: "public release v0.3 (May 2026)"
   selected: true
 
+- key: spiro2026memory
+  title: "Cellular proteostasis modules causally enable memory consolidation through region-specific architectures"
+  authors: "Spiro, T."
+  year: 2026
+  venue: "Manuscript, submission-ready"
+  abbr: "preprint"
+  code: "https://mool32.github.io/memory-consolidation/"
+  abstract: "Memory consolidation, read through 44 cellular sensing modules, resolves into a three-layer architecture — perception (senses the trigger), sentinel (senses proteostatic load), and construction (builds the machinery) — that separates cleanly in time and mechanism. TLR9 knockout selectively removes the ER-chaperone arm (−60–75%) and impairs memory: direct causal evidence. 26 pre-registered predictions across 7 datasets; 28/32 published perturbations predicted correctly, 0 contradictions."
+  stage: "submission-ready"
+  status: "manuscript submission-ready; results page live, preprint in preparation"
+  selected: true
+
 - key: spiro2026aievolution
   title: "Universal statistical signatures of evolution in artificial intelligence architectures"
   authors: "Spiro, T."
@@ -47,8 +59,8 @@
   title: "Spectral exponents of the twelve-lead ECG reveal the anatomy of cardiac conduction disorders and a bifurcation between aging and disease"
   authors: "Spiro, T."
   year: 2026
-  venue: "bioRxiv (submitted)"
-  abbr: "bioRxiv"
+  venue: "Preprint (Zenodo)"
+  abbr: "preprint"
   doi: "10.5281/zenodo.19945065"
   code: "https://github.com/mool32/ecg-spectral-exponents"
   abstract: "Spectral exponent β extracted from 412,730 twelve-lead recordings across three continents (PTB-XL, Chapman-Shaoxing, CODE-15%). β is diagnostic of cardiac conduction anatomy: CLBBB vs CRBBB AUC = 0.982 (Germany), 0.982 (China), 0.979 (Brazil). Aging flattens the spectrum; disease steepens it. Honest null on independent mortality prediction (HR = 1.02, p = 0.83)."
@@ -61,8 +73,8 @@
   title: "Transcriptomic noise accumulates within tissue identity across human aging: a systemic signature distinct from cell-composition drift"
   authors: "Spiro, T."
   year: 2026
-  venue: "bioRxiv (post-review v4)"
-  abbr: "bioRxiv"
+  venue: "Preprint (Zenodo)"
+  abbr: "preprint"
   doi: "10.5281/zenodo.19944444"
   code: "https://github.com/mool32/pi-tissue-aging"
   abstract: "Three-level variance decomposition on bulk transcriptomes from 263 GTEx v8 donors plus single-cell data from Tabula Muris Senis, Calico rat caloric-restriction atlas, and a rhesus macaque cross-species atlas. Tissue identity is preserved across forty years of aging; the signature is systemic noise, not selective accumulation. Caloric restriction acts as a noise filter, not a structure restorer. Cross-species lifespan scaling (α = −1.02, R² = 0.90)."

@@ -24,33 +24,35 @@ permalink: /cv/
 ## Profile
 
 Independent computational researcher; biophysics training (Lomonosov Moscow
-State University). Eight 2026 preprints / manuscripts across cellular signaling,
-aging biomarkers (412,730 ECG recordings; 823 EEG subjects across two cohorts;
-263 GTEx donors plus four species), and the statistical structure of trained
-transformers (arXiv:2604.10571; 1,584 controlled ablations on Pythia 410M).
-Author and maintainer of **perceptome**, a Python toolkit for cellular
-perception analysis (Zenodo DOI; 73/73 tests). 2026 Emergent Ventures
-recipient. Methodology inherited from experimental physics: preregistration,
-bitwise-reproducible pipelines, bootstrap uncertainty quantification, honest
-negative results — formalized as an AI-collaborative research methodology
-framework applied across all of the above.
+State University). Current result: the malignant cells of **25 cancers, from every
+major lineage, converge on one normal human cell type** — the placental
+cytotrophoblast — a state that malignancy deepens about sixfold inside a patient's
+own tissue ([Zenodo 10.5281/zenodo.20542130](https://doi.org/10.5281/zenodo.20542130)).
+Alongside: aging biomarkers replicated across unrelated substrates (412,730 ECG
+recordings; 823 EEG subjects across two cohorts; 263 GTEx donors plus four species)
+and the statistical structure of trained transformers (arXiv:2604.10571; 1,584
+controlled ablations on Pythia 410M). Author and maintainer of **perceptome**, a
+Python toolkit for cellular perception analysis (Zenodo DOI; 74/74 tests). 2026
+Emergent Ventures recipient. Methodology inherited from experimental physics:
+predictions locked before the data are seen, bitwise-reproducible pipelines,
+bootstrap uncertainty quantification, and negative results published in full.
 
 ## Software & tools
 
 **perceptome** (2026) — Python toolkit for cellular perception analysis.
 44 signaling modules; 9-PC eigenspace built from 154 Human Protein Atlas cell
-types; capacity-floor predictor; validity scorecard with three null controls;
-8-cell cancer-attractor reference (11 cancers from 11 organ systems converge
-toward it during transformation, independently replicated on an external HCC
-cohort). Zenodo [10.5281/zenodo.20113468](https://doi.org/10.5281/zenodo.20113468) · 73/73 tests passing.
+types; capacity-floor predictor; validity scorecard with three null controls; and
+the cancer-convergence reference anchored on the placental cytotrophoblast.
+Zenodo [10.5281/zenodo.20113468](https://doi.org/10.5281/zenodo.20113468) · 74/74 tests passing.
 
 ## Publications & preprints
 
-**Preprints (public, arXiv / bioRxiv / Zenodo):**
+**Preprints (public — arXiv, or self-archived on Zenodo; not peer reviewed):**
 
+- **Cancers of all lineages converge on the placental cytotrophoblast, a normal invasive cell state that malignancy deepens.** Zenodo preprint, 2026. 25 cancers projected into a 44-module eigenspace built from normal cells only; program space contracts 6.3-fold, and within matched tumour–normal pairs malignancy deepens the state ~6× (colorectal 43/46, paired P < 10⁻¹²). Zenodo 10.5281/zenodo.20542130.
 - **Universal statistical signatures of evolution in artificial intelligence architectures.** arXiv:2604.10571, 2026. 935 ablation experiments across 161 publications; substrate-independent heavy-tailed DFE.
-- **Spectral exponents of the twelve-lead ECG reveal the anatomy of cardiac conduction disorders and a bifurcation between aging and disease.** bioRxiv (submitted), 2026. 412,730 recordings across three continents; CLBBB vs CRBBB AUC ≈ 0.98 cross-population. Zenodo 10.5281/zenodo.19945065.
-- **Transcriptomic noise accumulates within tissue identity across human aging.** bioRxiv (post-review v4), 2026. GTEx v8 + Tabula Muris Senis + Calico rat + macaque atlas; aging as systemic noise, not selective accumulation. Zenodo 10.5281/zenodo.19944444.
+- **Spectral exponents of the twelve-lead ECG reveal the anatomy of cardiac conduction disorders and a bifurcation between aging and disease.** Zenodo preprint, 2026 (submitted to bioRxiv). 412,730 recordings across three continents; CLBBB vs CRBBB AUC ≈ 0.98 cross-population. Zenodo 10.5281/zenodo.19945065.
+- **Transcriptomic noise accumulates within tissue identity across human aging.** Zenodo preprint (post-review v4), 2026. GTEx v8 + Tabula Muris Senis + Calico rat + macaque atlas; aging as systemic noise, not selective accumulation. Zenodo 10.5281/zenodo.19944444.
 
 **Under review:**
 
@@ -58,7 +60,8 @@ cohort). Zenodo [10.5281/zenodo.20113468](https://doi.org/10.5281/zenodo.2011346
 
 **Manuscripts (submission-ready / in preparation):**
 
-- **Functional differentiation generates universal fitness-effect distributions in neural networks.** Submission-ready; target NeurIPS 2026 / ICML Mechanistic Interpretability Workshop. Pythia 410M, 1,584 controlled ablations across 8 checkpoints.
+- **Cellular proteostasis modules causally enable memory consolidation through region-specific architectures.** Submission-ready. 26 predictions pre-registered across seven transcriptomic datasets; TLR9 knockout selectively blunts ER-chaperone induction by 60–75% and impairs contextual fear memory; 28 of 32 published proteostasis perturbations predicted, zero contradictions. [Summary](https://mool32.github.io/memory-consolidation/).
+- **Functional differentiation generates universal fitness-effect distributions in neural networks.** Submission-ready. Pythia 410M, 1,584 controlled ablations across 8 checkpoints.
 - **Clonal crystallization as a shared signature of bone-marrow aging and neural-network training.** Cross-substrate (Gini, eff_N) framework; caloric restriction rescues 64% of the aging drift in rat bone marrow.
 - **Temporal architecture of signaling oscillations predicts cancer gene function across pathways.** Rise/recovery temporal classification; OR = 27.5, p = 3.6 × 10⁻⁹ across 14 pathways.
 - **Negative feedback loop architecture as a modular predictor of cancer vulnerability.** 128 NFLs from KEGG; 59-fold CGC enrichment (p = 9 × 10⁻⁴⁴); Irreversible Authority metric (ρ = 0.83).
@@ -80,8 +83,8 @@ cohort). Zenodo [10.5281/zenodo.20113468](https://doi.org/10.5281/zenodo.2011346
 
 **Independent computational researcher** · 2020 – present
 Independent research program across cellular perception, aging biomarkers,
-comparative biology of neural networks, and AI-collaborative research
-methodology. Recent concentration on the perceptome framework and single-cell /
+comparative biology of neural networks, and research-validation methodology.
+Recent concentration on the perceptome framework and single-cell /
 transcriptomic analysis; earlier work in computational neuroscience (EEG) and
 systems biology. All inferential projects preregistered; full code and data
 released on GitHub and Zenodo.
@@ -99,11 +102,12 @@ apoptosis), identifying key parameters of the innate-immunity signaling pathway.
 
 ## Research methodology
 
-Developer of an **AI-collaborative research methodology framework**
+Author of the validation framework applied across the portfolio
 ([mool32.github.io/methodology](https://mool32.github.io/methodology/)) —
-preregistration discipline, sign-convention locks, locked-vs-working artifacts,
-reproducibility standards, and AI-friendly publishing — applied as worked
-examples across the portfolio.
+hash-locked pre-registration, sign-convention locks, locked-vs-working artifacts,
+reproducibility standards, negative results published in full, and machine-readable
+publishing. Includes explicit disclosure of how AI systems are used as research
+instruments and what they are deliberately not trusted with.
 
 ## Education
 

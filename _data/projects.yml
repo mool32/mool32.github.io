@@ -17,6 +17,11 @@
       stage: "software-release"
       summary: "44 signaling modules treated as a cell's perceptual repertoire; 9-PC eigenspace from 154 Human Protein Atlas cell types; capacity-floor predictor; validity scorecard with three null controls. The toolkit behind the cancer-convergence finding above."
       status: "v0.3 public release · Zenodo DOI 10.5281/zenodo.20113468 · 73/73 tests passing"
+    - title: "Proteostasis modules causally enable memory consolidation"
+      url: "https://mool32.github.io/memory-consolidation/"
+      stage: "submission-ready"
+      summary: "Memory consolidation, read through 44 perceptome modules across 7 datasets with 26 pre-registered predictions, resolves into a three-layer architecture — perception (senses the trigger), sentinel (senses proteostatic load), construction (builds the machinery). Region-specific (hippocampus builds new synapses; amygdala swaps receptors against a 1.8× baseline reserve). TLR9 knockout selectively removes the ER-chaperone arm (−60–75%) and impairs memory — direct causal evidence. 28/32 published perturbations predicted, 0 contradictions."
+      status: "manuscript submission-ready · results page live · preprint in prep"
     - title: "Temporal architecture of signaling oscillations predicts cancer gene function"
       url: "https://github.com/mool32/oscillatory-cancer-framework"
       stage: "preprint"
@@ -124,8 +129,8 @@
       summary: "Can an autoencoder's fitting process sense a biological axis it was never shown? Pre-registered (A∧B∧C∧D, leave-donors-out) on immune aging (GSE233321, 167 donors). The latent never beats matched linear PCA at recovering age (0/2 across seeds × dims); training erodes the signal; a synthetic positive control localises the exact regime where the method would win — high linear rank, low intrinsic dimension — which single-cell data does not occupy. The unsupervised latent independently re-derives the perceptome eigenspace (CCA p=0.001) but not its aging axis."
       status: "honest negative result · prototype confirmed, write-up in progress"
 
-- category: AI-collaborative research methodology
-  blurb: "A framework for doing science in active collaboration with AI — preregistration discipline, sign conventions, locked-vs-working artifacts, AI-friendly publishing — with this portfolio as the worked-example track. First concrete pre-registered study under the framework is now public."
+- category: Research methodology and validation
+  blurb: "The machinery that makes every result here checkable: hash-locked pre-registration, fixed sign conventions, honest negative results, reproducible code, and machine-readable publishing — with this portfolio as the worked example. Includes explicit disclosure of how AI systems are used as instruments, and what they are not trusted with."
   projects:
     - title: "Methodology framework"
       url: "https://mool32.github.io/methodology/"

@@ -37,9 +37,9 @@ plugins:
   - jekyll-sitemap    # /sitemap.xml (helps both search engines and AI crawlers)
   - jekyll-seo-tag    # canonical URL, Open Graph, Twitter Card, structured data
 
-# SEO tag inputs (consumed by jekyll-seo-tag)
-twitter:
-  card: summary
+# No X/Twitter presence: omitting the `twitter:` block on purpose. jekyll-seo-tag
+# would otherwise derive a malformed `twitter:creator` from the author hash
+# ("@Theodor Spiro"). Link previews are carried by the Open Graph tags instead.
 
 # Site nav (used by _includes/header.html)
 nav:

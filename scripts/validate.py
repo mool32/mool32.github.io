@@ -71,6 +71,16 @@ for p in pubs:
     if p.get("doi") and not DOI_RE.match(p["doi"]):
         err(f"publication {k}: doi {p['doi']!r} is not a bare DOI (10.x/...)")
 
+# ---- 2b. every publication stage is rendered on /publications ---------------
+# /publications groups entries by `stage`. A stage with no section would drop
+# those publications off the page silently — catch that here.
+rendered_stages = set(re.findall(r'where:\s*"stage",\s*"([^"]+)"', read("publications.md")))
+for p in pubs:
+    st = p.get("stage")
+    if st and st not in rendered_stages:
+        err(f"publication {p['key']}: stage {st!r} has no section on /publications — "
+            "the entry would silently vanish from the page")
+
 # ---- 3. projects: required fields + stage vocab -----------------------------
 internal_targets = []
 projects = load("_data/projects.yml")
