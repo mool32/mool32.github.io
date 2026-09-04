@@ -395,8 +395,8 @@ main.content thead th { border-bottom: 2px solid var(--line); font-weight: 600; 
 
 /* ---------- Print / Save-as-PDF -------------------------------------------
    Used both by readers hitting Cmd-P on /cv/ and by the CI job that renders
-   cv.pdf from that same page (.github/workflows/cv-pdf.yml), so the PDF and
-   the page can never disagree. Hide site chrome, keep the substance. */
+   Theodor_Spiro_CV.pdf from that same page (.github/workflows/cv-pdf.yml),
+   so the PDF and the page can never disagree. Hide chrome, keep substance. */
 @media print {
   .site-header,
   .site-footer,

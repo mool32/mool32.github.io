@@ -25,7 +25,7 @@
   title    = {perceptome: a Python toolkit for cellular perception analysis},
   author   = {Spiro, Theodor},
   year     = {2026},
-  version  = {0.3},
+  version  = {0.2.2},
   doi      = {10.5281/zenodo.20113468},
   url      = {https://doi.org/10.5281/zenodo.20113468},
   code     = {https://github.com/mool32/perceptome},
@@ -34,11 +34,30 @@
   selected = {true},
   bibtex_show = {true},
   order    = {1},
-  venue    = {Software release (v0.3)},
+  venue    = {Software release (v0.2.2)},
   stage    = {software-release},
-  status   = {public release v0.3 (May 2026)}
+  status   = {public release v0.2.2 (May 2026)}
 }
 
+
+@software{spiro2026metricautopsy,
+  abbr     = {toolkit},
+  title    = {metric-autopsy: a metric-agnostic gate system for separating biological signal from QC and technical artifacts in single-cell metrics},
+  author   = {Spiro, Theodor},
+  year     = {2026},
+  version  = {0.1.1},
+  doi      = {10.5281/zenodo.21195679},
+  url      = {https://doi.org/10.5281/zenodo.21195679},
+  code     = {https://github.com/mool32/metric-autopsy},
+  abstract = {A metric that changes between conditions is not yet a finding: it may be dropout, library size, a batch effect, a factorial-interaction confound, or an artifact of the mathematics. metric-autopsy inverts the default from compute-then-believe to state-your-commitments, red-team, then believe. A computed single-cell metric is passed through eight gates -- mathematical independence under simulated dropout, factorial QC parity, n_genes matching, raw-data visibility, stratified controls, and cross-dataset replication, plus two judgment gates the tool elicits rather than scripts -- and the run stops at the first blocking failure. The metric is a black box: the caller supplies metric(data) -> float and the factorial obs columns, and the gates probe the data and the metric's response to controlled perturbations. The system was built from three of the author's own real failures (an entropy anticorrelation that reversed at low sequencing depth, a cardiac exponent that was conduction geometry rather than biology, and a SMAD-ECM mutual information driven by a detection-rate confound inside a sex-by-age interaction), each of which survived weeks of work before a short QC check killed it. On the worked example the reference metric fails 0 of N gates while a library-normalized reference passes, showing the confound is avoidable rather than universal. Honest limit: passing all eight gates removes only the artifacts these gates know about. Ships as a pip package, a Claude Code skill, and an MCP server; 35 tests.},
+  teaser   = {Red-team a computed single-cell metric before you believe it. Eight gates — dropout independence, factorial QC parity, n_genes matching, stratified controls, cross-dataset replication — probe a black-box metric and stop at the first blocking failure. Built from three of my own failures that each survived weeks before a 45-second QC check killed them. Ships as a pip package, a Claude Code skill, and an MCP server; 35 tests.},
+  selected = {true},
+  bibtex_show = {true},
+  order    = {2},
+  venue    = {Software release (v0.1.1)},
+  stage    = {software-release},
+  status   = {public release v0.1.1 (Jul 2026)}
+}
 
 @misc{spiro2026cytotrophoblast,
   abbr     = {preprint},

@@ -1,9 +1,9 @@
 name: cv-pdf
 
-# Keeps /cv.pdf in sync with the /cv/ page by rendering the built page itself.
+# Keeps the downloadable CV PDF in sync with the /cv/ page by rendering the built page itself.
 # The PDF is therefore the page — it cannot drift from the CV content.
 #
-# Runs only when the CV or its presentation changes (note: `cv.pdf` is NOT in the
+# Runs only when the CV or its presentation changes (note: the PDF is NOT in the
 # paths filter, so the commit this job makes cannot retrigger it).
 
 on:
@@ -44,18 +44,18 @@ jobs:
           for i in $(seq 1 20); do curl -sf http://localhost:4000/cv/ >/dev/null && break; sleep 1; done
           google-chrome --headless=new --disable-gpu --no-sandbox \
             --no-pdf-header-footer \
-            --print-to-pdf=cv.pdf \
+            --print-to-pdf=Theodor_Spiro_CV.pdf \
             http://localhost:4000/cv/
-          ls -la cv.pdf
+          ls -la Theodor_Spiro_CV.pdf
 
       - name: Commit the regenerated PDF if it changed
         run: |
-          if git diff --quiet -- cv.pdf; then
-            echo "cv.pdf unchanged — nothing to commit"
+          if git diff --quiet -- Theodor_Spiro_CV.pdf; then
+            echo "Theodor_Spiro_CV.pdf unchanged — nothing to commit"
             exit 0
           fi
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add cv.pdf
-          git commit -m "Rebuild cv.pdf from the /cv/ page [skip ci]"
+          git add Theodor_Spiro_CV.pdf
+          git commit -m "Rebuild Theodor_Spiro_CV.pdf from the /cv/ page [skip ci]"
           git push

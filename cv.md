@@ -18,7 +18,7 @@ permalink: /cv/
     <a href="https://www.linkedin.com/in/theodorspiro">linkedin.com/in/theodorspiro</a>
   </div>
   <div class="cv-grant">Emergent Ventures grant recipient (2026)</div>
-  <div class="cv-download"><a href="{{ '/cv.pdf' | relative_url }}">Download PDF →</a></div>
+  <div class="cv-download"><a href="{{ '/Theodor_Spiro_CV.pdf' | relative_url }}" download="Theodor_Spiro_CV.pdf">Download PDF →</a></div>
 </header>
 
 ## Profile
@@ -31,8 +31,10 @@ own tissue ([Zenodo 10.5281/zenodo.20542130](https://doi.org/10.5281/zenodo.2054
 Alongside: aging biomarkers replicated across unrelated substrates (412,730 ECG
 recordings; 823 EEG subjects across two cohorts; 263 GTEx donors plus four species)
 and the statistical structure of trained transformers (arXiv:2604.10571; 1,584
-controlled ablations on Pythia 410M). Author and maintainer of **perceptome**, a
-Python toolkit for cellular perception analysis (Zenodo DOI; 74/74 tests). 2026
+controlled ablations on Pythia 410M). Author and maintainer of two released,
+DOI-archived open-source research tools: **perceptome** (cellular perception
+analysis; 74/74 tests) and **metric-autopsy** (red-teaming a computed single-cell
+metric against QC and technical artifacts; 35 tests). 2026
 Emergent Ventures recipient. Methodology inherited from experimental physics:
 predictions locked before the data are seen, bitwise-reproducible pipelines,
 bootstrap uncertainty quantification, and negative results published in full.
@@ -44,6 +46,14 @@ bootstrap uncertainty quantification, and negative results published in full.
 types; capacity-floor predictor; validity scorecard with three null controls; and
 the cancer-convergence reference anchored on the placental cytotrophoblast.
 Zenodo [10.5281/zenodo.20113468](https://doi.org/10.5281/zenodo.20113468) · 74/74 tests passing.
+
+**metric-autopsy** (2026) — metric-agnostic gate system for separating biological
+signal from QC and technical artifacts in single-cell metrics. Eight gates
+(mathematical independence under simulated dropout, factorial QC parity, n_genes
+matching, stratified controls, cross-dataset replication, plus two judgment gates
+the tool elicits) probe a black-box `metric(data) -> float` and stop at the first
+blocking failure. Ships as a pip package, a Claude Code skill, and an MCP server.
+Zenodo [10.5281/zenodo.21195679](https://doi.org/10.5281/zenodo.21195679) · 35 tests passing.
 
 ## Publications & preprints
 
@@ -95,6 +105,10 @@ laboratory of Andrei Gudkov (Roswell Park Comprehensive Cancer Center). Aging
 manuscripts developed in this affiliation (e.g. pi-tissue-aging) were revised
 under Gudkov review.
 
+**Computational Biology Intern — BostonGene** · 2022
+Computational analysis in immuno-oncology: molecular tumor profiling and
+multi-omics data in a clinical-genomics setting.
+
 **B.Sc. / M.Sc. research — Moscow State University, Faculty of Physics** · 2018 – 2022
 Supervisor: Prof. L. Yakovenko. Agent-based / cellular-automata modeling of the
 cellular response to pro-inflammatory stimuli (TLR4/TLR6 → NF-κB → TNF →
@@ -117,6 +131,8 @@ kinetics; magnetic radio-spectroscopy in biology and medicine. Thesis defense
 not completed due to relocation from Russia in 2022.
 
 **B.Sc. Biophysics** — Lomonosov Moscow State University, Faculty of Physics · 2014 – 2021
+Completed over an extended period: taught mathematics and physics throughout the
+degree (see Teaching) and became a parent during it.
 
 **Lyceum 1525, Physics & Mathematics** — Moscow · 2010 – 2014
 
@@ -144,7 +160,9 @@ request.
 
 - **Programming:** Python (NumPy, Pandas, SciPy, scikit-learn, matplotlib, PyTorch), Git, Bash, LaTeX, SQL basics
 - **Methods:** preregistered experimental design, bootstrap uncertainty quantification, distribution fitting with AIC comparison, dimensionality reduction, time-series and signal analysis, agent-based modeling
-- **Data domains:** single-cell & bulk RNA-seq, EEG / ECG signals, neural-network interpretability, large-scale forecasting data
+- **Bioinformatics:** single-cell RNA-seq pipelines (scanpy / AnnData), quality control and batch/confound diagnostics, gene-set and pathway module scoring, differential expression, PCA and eigenspace construction, cross-dataset replication
+- **Data domains:** single-cell & bulk RNA-seq, GTEx / Tabula Muris Senis / Human Protein Atlas, EEG / ECG signals, neural-network interpretability, large-scale forecasting data
+- **Software engineering:** installable Python packages (`pyproject.toml`), pytest suites, GitHub Actions CI, MCP servers, containerless reproducible pipelines with pinned environments
 - **AI-assisted research:** LLM-integrated analysis pipelines under an explicit preregistration / reproducibility framework
 
 ## Languages

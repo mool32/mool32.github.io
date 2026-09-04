@@ -138,7 +138,7 @@ def permalink_of(md):
 
 pages = {permalink_of(f) for f in os.listdir(ROOT) if f.endswith(".md")}
 pages |= {"/papers.bib", "/llms.txt", "/robots.txt", "/feed.xml",
-          "/sitemap.xml", "/cv.pdf"}
+          "/sitemap.xml", "/Theodor_Spiro_CV.pdf"}
 # Sibling project sites live at mool32.github.io/<repo>/ (separate repos) — allow.
 SIBLING_SITES = {"dat-ru", "you-are-not-random", "game_theory_models", "assets"}
 

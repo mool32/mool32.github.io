@@ -20,13 +20,13 @@
   title: "perceptome: a Python toolkit for cellular perception analysis"
   authors: "Spiro, T."
   year: 2026
-  venue: "Software release (v0.3)"
+  venue: "Software release (v0.2.2)"
   abbr: "toolkit"
   doi: "10.5281/zenodo.20113468"
   code: "https://github.com/mool32/perceptome"
   abstract: "A Python toolkit treating 44 cellular signaling pathways (NF-κB, mTOR, UPR, p53, nuclear receptors, …) as a cell's perceptual repertoire. Three capabilities other tools don't directly provide: (1) a 9-PC eigenspace derived from 154 normal human cell types (Human Protein Atlas) where any cell — yours, a tumor, a drug-treated — can be located on the same map; (2) a capacity-floor predictor — given a cell type and a pathway, will it ramp under stimulus or is it already saturated; (3) a validity scorecard with three null controls (random-gene panel, housekeeping, cell cycle) that catches common perturbation artifacts before interpretation. It is the toolkit behind the cancer-convergence finding — 25 cancers converge on the placental cytotrophoblast (Zenodo 10.5281/zenodo.20542130) — and implements only what that multi-year pre-registered program validated, deliberately excluding operations that were tested and falsified."
   stage: "software-release"
-  status: "public release v0.3 (May 2026)"
+  status: "public release v0.2.2 (May 2026)"
   selected: true
 
 - key: spiro2026memory
@@ -39,6 +39,19 @@
   abstract: "Memory consolidation, read through 44 cellular sensing modules, resolves into a three-layer architecture — perception (senses the trigger), sentinel (senses proteostatic load), and construction (builds the machinery) — that separates cleanly in time and mechanism. TLR9 knockout selectively removes the ER-chaperone arm (−60–75%) and impairs memory: direct causal evidence. 26 pre-registered predictions across 7 datasets; 28/32 published perturbations predicted correctly, 0 contradictions."
   stage: "submission-ready"
   status: "manuscript submission-ready; results page live, preprint in preparation"
+  selected: true
+
+- key: spiro2026metricautopsy
+  title: "metric-autopsy: a metric-agnostic gate system for separating biological signal from QC and technical artifacts in single-cell metrics"
+  authors: "Spiro, T."
+  year: 2026
+  venue: "Software release (v0.1.1)"
+  abbr: "toolkit"
+  doi: "10.5281/zenodo.21195679"
+  code: "https://github.com/mool32/metric-autopsy"
+  abstract: "Red-team a computed single-cell metric before you believe it. Eight gates — dropout independence, factorial QC parity, n_genes matching, stratified controls, cross-dataset replication — probe a black-box metric and stop at the first blocking failure. Built from three of my own failures that each survived weeks before a 45-second QC check killed them. Ships as a pip package, a Claude Code skill, and an MCP server; 35 tests."
+  stage: "software-release"
+  status: "public release v0.1.1 (Jul 2026)"
   selected: true
 
 - key: spiro2026aievolution

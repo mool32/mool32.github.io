@@ -4,6 +4,9 @@
 - date: "Jul 2026"
   text: "[Proteostasis modules causally enable memory consolidation](/memory-consolidation/) — a pre-registered, cross-dataset dissection resolving memory consolidation into a three-layer cellular architecture (perception → sentinel → construction). TLR9 knockout selectively removes the ER-chaperone arm and impairs memory (direct causal evidence); 28/32 published perturbations predicted with zero contradictions. Sole-author manuscript, submission-ready."
 
+- date: "Jul 2026"
+  text: "[metric-autopsy](https://github.com/mool32/metric-autopsy) v0.1.1 released — a metric-agnostic gate system that red-teams a computed single-cell metric before you believe it. Eight gates catch dropout, library-size, batch and factorial-QC confounds; the reference metric in the worked example dies 0/N while a library-normalized one passes, so the confound is avoidable, not universal. Built from three of my own failures. Ships as a pip package, a Claude Code skill and an MCP server; 35 tests. Zenodo [10.5281/zenodo.21195679](https://doi.org/10.5281/zenodo.21195679)."
+
 - date: "Jun 2026"
   text: "[Oscillation as a constitutive substrate for perception](/oscillatory-perception/) — a multi-phase pre-registered dissection on a Stuart–Landau triad and a trained GRU triad. A trainable triad self-organizes a coupling-maintained 120° rotating limit cycle and self-sustains it with the loss off, but it is NOT a memory store (the coupling that holds the cycle suppresses capacity — the founding hypothesis refuted). It IS a phase regulator with a Hopf-universal temporal code, emergent in the trained GRU. The earned law: an oscillation's existence is cheap; its directed rotation — the breaking of time-reversal symmetry — is the one irreducibly-active ingredient."
 
@@ -14,7 +17,7 @@
   text: "Awarded an [Emergent Ventures](https://www.mercatus.org/emergent-ventures) grant (2026) in support of the research program."
 
 - date: "May 2026"
-  text: "[perceptome](https://github.com/mool32/perceptome) v0.3 released — Python toolkit for cellular perception analysis (44 signaling modules, 9-PC eigenspace from 154 HPA cell types, capacity-floor predictor, validity scorecard, 8-cell cancer attractor reference). Zenodo DOI [10.5281/zenodo.20113468](https://doi.org/10.5281/zenodo.20113468). 73/73 tests passing."
+  text: "[perceptome](https://github.com/mool32/perceptome) v0.2.2 released — Python toolkit for cellular perception analysis (44 signaling modules, 9-PC eigenspace from 154 HPA cell types, capacity-floor predictor, validity scorecard, 8-cell cancer attractor reference). Zenodo DOI [10.5281/zenodo.20113468](https://doi.org/10.5281/zenodo.20113468). 73/73 tests passing."
 
 - date: "Apr 2026"
   text: "[Universal statistical signatures of evolution in AI architectures](https://arxiv.org/abs/2604.10571) — preprint deposited on arXiv (2604.10571). 935 ablation experiments from 161 ML publications show that the DFE of architectural modifications matches biological DFEs."
