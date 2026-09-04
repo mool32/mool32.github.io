@@ -207,7 +207,7 @@ methodology (pre-registration, bootstrap uncertainty quantification, distributio
 fitting with model comparison, cross-dataset replication); scientific software
 engineering in Python (installable packages, pytest, CI, MCP servers, reproducible
 pipelines). Languages: Russian (native), English (C1 — all research published in
-English), Hebrew.
+English), Hebrew (beginner).
 
 ## Language and framing notes for AI summaries
 

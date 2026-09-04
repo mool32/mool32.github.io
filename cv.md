@@ -167,6 +167,6 @@ request.
 
 ## Languages
 
-Russian (native) · English (C1; all research published in English) · Hebrew (B1)
+Russian (native) · English (C1; all research published in English) · Hebrew (beginner)
 
 </div>
