@@ -16,6 +16,12 @@ also fired). Checks:
   * internal links resolve to a real page (warn)
   * venue/status roughly agree with stage (warn)
   * the private gmail address never leaks into shipped content
+  * every publication stage has a section on /publications (else the
+    entry would silently vanish from the page)
+  * identity is consistent across the pages that state it: canonical name
+    and surname, ORCID, public email, and — the checkable one — that the
+    independent programme (2020) is never conflated with the Vaika
+    affiliation (2024)
 """
 import os
 import re
@@ -182,6 +188,77 @@ for dirpath, _dirs, files in os.walk(ROOT):
             if GMAIL in line and "not" not in line.lower():
                 err(f"{os.path.relpath(path, ROOT)}:{ln}: leaks the private gmail "
                     "address as contact (public contact must be tspiro@vaika.org)")
+
+# ---- 8. identity + date consistency ----------------------------------------
+# The facts a reader can check in 30 seconds — name, ORCID, public email, and
+# which year attaches to which claim — must not disagree between the pages that
+# state them. This is the class of bug that quietly costs credibility.
+IDENT = {
+    "name":              "Theodor Spiro",
+    "orcid":             "0009-0004-5382-9346",
+    "email":             "tspiro@vaika.org",
+    "program_since":     "2020",   # the independent research programme
+    "affiliation_since": "2024",   # the Vaika Inc. affiliation
+}
+IDENT_FILES = ["index.md", "cv.md", "llms.txt", "_config.yml",
+               "_includes/head.html", "publications.md", "projects.md",
+               "methodology.md"]
+NAME_VARIANTS = ["Teo Spiro", "Teo Spirin", "T. Spirin"]
+
+for rel in IDENT_FILES:
+    if not os.path.exists(os.path.join(ROOT, rel)):
+        continue
+    text = read(rel)
+
+    # every ORCID-shaped string must be the canonical one (catches typos)
+    for found in set(re.findall(r"\b\d{4}-\d{4}-\d{4}-\d{3}[\dX]\b", text)):
+        if found != IDENT["orcid"]:
+            err(f"{rel}: ORCID {found} does not match the canonical {IDENT['orcid']}")
+
+    # every mailto must be the public address
+    for addr in set(re.findall(r"mailto:([^\"'\s>)\]]+)", text)):
+        if addr != IDENT["email"]:
+            err(f"{rel}: mailto:{addr} is not the canonical public email {IDENT['email']}")
+
+    # non-canonical spellings of the author name
+    for ln, line in enumerate(text.split("\n"), 1):
+        for bad in NAME_VARIANTS:
+            if bad in line:
+                err(f"{rel}:{ln}: non-canonical author name {bad!r} — use {IDENT['name']!r}")
+        if re.search(r"\bSpirin\b", line):
+            err(f"{rel}:{ln}: surname typo 'Spirin' — the canonical surname is 'Spiro'")
+
+    # 'Serbanescu' is allowed only where the historical name-note is documented
+    if "Serbanescu" in text and rel not in ("llms.txt", "methodology.md"):
+        err(f"{rel}: 'Serbanescu' appears outside the documented name-note")
+
+    # The affiliation must never be dated to the programme's start year.
+    # Work sentence-by-sentence on whitespace-collapsed text: the claim is often
+    # split across a line break, and either word order occurs ("affiliated since
+    # 2020" / "Since 2020 ... affiliated"). A sentence that names BOTH years is
+    # disambiguating on purpose (llms.txt does this) and is left alone.
+    _prog, _affil = IDENT["program_since"], IDENT["affiliation_since"]
+    _flat = re.sub(r"\s+", " ", text)
+    for _sent in re.split(r"(?<=[.;])\s+", _flat):
+        if _affil in _sent:
+            continue
+        _dated_prog = re.search(
+            r"(?i)(since\s+\*{0,2}" + _prog + r"\b|\b" + _prog + r"\s*[–-]\s*present)", _sent)
+        if _dated_prog and re.search(r"(?i)affiliat|vaika", _sent):
+            err(f"{rel}: the Vaika affiliation is dated to {_prog} — the independent "
+                f"programme runs from {_prog}, the affiliation from {_affil}")
+            break
+
+    # "· YYYY – present" lines must carry the right year for what they describe
+    for ln, line in enumerate(text.split("\n"), 1):
+        m = re.search(r"·\s*(20\d\d)\s*[–-]\s*present", line)
+        if not m:
+            continue
+        yr = m.group(1)
+        if "Vaika" in line and yr != IDENT["affiliation_since"]:
+            err(f"{rel}:{ln}: Vaika affiliation dated {yr}, canonical is {IDENT['affiliation_since']}")
+        if re.search(r"(?i)\bindependent\b", line) and yr != IDENT["program_since"]:
+            err(f"{rel}:{ln}: independent programme dated {yr}, canonical is {IDENT['program_since']}")
 
 # ---- report -----------------------------------------------------------------
 for w in warnings:
