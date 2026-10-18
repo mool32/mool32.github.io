@@ -5,18 +5,18 @@
 # active development.
 
 - category: Cellular perception
-  blurb: "Treating cellular signaling pathways as a perceptual repertoire — the current center of the portfolio. Flagship: the cancer-convergence finding, built on the perceptome framework + toolkit, with a growing family of papers."
+  blurb: "Treating cellular signaling and stress-response pathways as a regulatory repertoire — the current center of the portfolio. Lead result: the cancer-convergence finding, built on the perceptome framework and toolkit, with a growing family of papers."
   projects:
-    - title: "Cancers of all lineages converge on the placental cytotrophoblast"
-      url: "https://doi.org/10.5281/zenodo.20542130"
+    - title: "Diverse cancers converge on one region of normal cell-state space in a cancer-blind coordinate system"
+      url: "https://doi.org/10.5281/zenodo.20542129"
       stage: "preprint"
-      summary: "A coordinate map from 44 signaling modules over 154 normal cell types (single-cell RNA, no cancer data); the malignant cells of 25 cancers converge onto one normal-cell region — the placental cytotrophoblast, a normal invasive state — contracting program space 6.3×. Within matched tumor–normal pairs, malignancy deepens the state ~6× (colorectal 43/46, paired P<10⁻¹²; kidney+liver 77/86; absent in high-baseline lung)."
-      status: "preprint on Zenodo (DOI 10.5281/zenodo.20542130)"
+      summary: "A coordinate map from 44 regulatory modules over 154 normal cell types (single-cell RNA, no cancer data anywhere in its construction); malignant cells from 25 cancer datasets land in one restricted region of it. Most of the contraction is shared transcriptional output against a matched-averaging null; a smaller convergence in module pattern survives. The most defensible claim is within patients — malignant epithelium occupies the state far more often than the same patient's normal epithelium (colorectal 19% vs 3%, 43 of 46 patients; pooled 77 of 86), in every tissue tested except prostate. The nearest normal cell is the placental cytotrophoblast, but independent rebuilds of the catalog reproduce the region while naming a different cell: the region is robust, the anchor is catalog-conditional."
+      status: "preprint on Zenodo (concept DOI 10.5281/zenodo.20542129)"
     - title: "perceptome — Python toolkit for cellular perception analysis"
       url: "https://github.com/mool32/perceptome"
       stage: "software-release"
-      summary: "44 signaling modules treated as a cell's perceptual repertoire; 9-PC eigenspace from 154 Human Protein Atlas cell types; capacity-floor predictor; validity scorecard with three null controls. The toolkit behind the cancer-convergence finding above."
-      status: "v0.2.2 public release (May 2026) · Zenodo DOI 10.5281/zenodo.20113468 · 74/74 tests passing on main"
+      summary: "44 regulatory modules scored in single-cell data and placed in a fixed 9-dimensional reference space built from 154 Human Protein Atlas cell types; the within-patient convergence assay of the paper; a capacity-floor predictor; and a scorecard with three null controls. The toolkit behind the cancer-convergence finding above; it also records what the underlying work falsified or retracted."
+      status: "v0.2.2 public release (May 2026) · Zenodo DOI 10.5281/zenodo.20113468"
     - title: "Proteostasis modules causally enable memory consolidation"
       url: "https://mool32.github.io/memory-consolidation/"
       stage: "submission-ready"
@@ -77,9 +77,9 @@
       status: "preprint on Zenodo, post-Gudkov-review v4"
     - title: "Waveform asymmetry as a biomarker of neural aging"
       url: "https://github.com/mool32/waveform-asymmetry-aging"
-      stage: "under-review"
+      stage: "preprint"
       summary: "Peak-trough asymmetry of EEG oscillations in 215 (LEMON) + 608 (Dortmund Vital Study) adults, with 208-subject 5-year longitudinal follow-up. β-band asymmetry decreases with age; effect exceeds classical alpha slowing. Theta spatial entropy predicts memory independent of age."
-      status: "under review at Frontiers in Aging Neuroscience"
+      status: "preprint on Zenodo (DOI 10.5281/zenodo.19912202)"
 
 - category: Cognition, education, experiments, social projects
   blurb: "Public instruments, cognition studies, and educational / social experiments."

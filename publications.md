@@ -19,11 +19,6 @@ The canonical BibTeX file is served at [`/papers.bib`]({{ '/papers.bib' | relati
 and is the single source of truth for citation export; everything on this page is
 generated from it.
 
-## Under review at a journal
-
-{% assign under_review = site.data.publications | where: "stage", "under-review" %}
-{% include pub-list.html pubs=under_review %}
-
 ## Preprints
 
 Publicly posted, not peer reviewed. `arXiv` entries are on arXiv; the rest are

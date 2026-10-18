@@ -1,7 +1,7 @@
 ---
 layout: default
 title: CV
-description: Curriculum vitae — Theodor Spiro, independent researcher (cellular perception, aging biomarkers, comparative biology of neural networks).
+description: Curriculum vitae — Theodor Spiro, independent researcher in computational biophysics; cell states in cancer and stress.
 permalink: /cv/
 ---
 
@@ -9,164 +9,155 @@ permalink: /cv/
 
 <header class="cv-header" markdown="0">
   <h1 class="cv-name">Theodor Spiro</h1>
-  <div class="cv-tagline">Independent Researcher — cellular perception, aging biomarkers, and the comparative biology of learning systems</div>
+  <div class="cv-tagline">Computational biophysics — cell states in cancer and stress</div>
   <div class="cv-contact">
-    Vaika Inc. (aging-research nonprofit, Gudkov lab), East Aurora, NY · Based in Tel Aviv, Israel · <a href="mailto:tspiro@vaika.org">tspiro@vaika.org</a><br>
+    Vaika Inc. (nonprofit aging-research organization), East Aurora, NY · Based in Tel Aviv, Israel · <a href="mailto:tspiro@vaika.org">tspiro@vaika.org</a><br>
     <a href="https://orcid.org/0009-0004-5382-9346">ORCID 0009-0004-5382-9346</a> ·
     <a href="https://github.com/mool32">github.com/mool32</a> ·
     <a href="https://mool32.github.io/">mool32.github.io</a> ·
     <a href="https://www.linkedin.com/in/theodorspiro">linkedin.com/in/theodorspiro</a>
   </div>
-  <div class="cv-grant">Emergent Ventures grant recipient (2026)</div>
   <div class="cv-download"><a href="{{ '/Theodor_Spiro_CV.pdf' | relative_url }}" download="Theodor_Spiro_CV.pdf">Download PDF →</a></div>
 </header>
 
-## Profile
+## Research interests
 
-Independent computational researcher; biophysics training (Lomonosov Moscow
-State University). Current result: the malignant cells of **25 cancers, from every
-major lineage, converge on one normal human cell type** — the placental
-cytotrophoblast — a state that malignancy deepens about sixfold inside a patient's
-own tissue ([Zenodo 10.5281/zenodo.20542130](https://doi.org/10.5281/zenodo.20542130)).
-Alongside: aging biomarkers replicated across unrelated substrates (412,730 ECG
-recordings; 823 EEG subjects across two cohorts; 263 GTEx donors plus four species)
-and the statistical structure of trained transformers (arXiv:2604.10571; 1,584
-controlled ablations on Pythia 410M). Author and maintainer of two released,
-DOI-archived open-source research tools: **perceptome** (cellular perception
-analysis; 74/74 tests) and **metric-autopsy** (red-teaming a computed single-cell
-metric against QC and technical artifacts; 35 tests). 2026
-Emergent Ventures recipient. Methodology inherited from experimental physics:
-predictions locked before the data are seen, bitwise-reproducible pipelines,
-bootstrap uncertainty quantification, and negative results published in full.
-
-## Software & tools
-
-**perceptome** (2026) — Python toolkit for cellular perception analysis.
-44 signaling modules; 9-PC eigenspace built from 154 Human Protein Atlas cell
-types; capacity-floor predictor; validity scorecard with three null controls; and
-the cancer-convergence reference anchored on the placental cytotrophoblast.
-Zenodo [10.5281/zenodo.20113468](https://doi.org/10.5281/zenodo.20113468) · 74/74 tests passing.
-
-**metric-autopsy** (2026) — metric-agnostic gate system for separating biological
-signal from QC and technical artifacts in single-cell metrics. Eight gates
-(mathematical independence under simulated dropout, factorial QC parity, n_genes
-matching, stratified controls, cross-dataset replication, plus two judgment gates
-the tool elicits) probe a black-box `metric(data) -> float` and stop at the first
-blocking failure. Ships as a pip package, a Claude Code skill, and an MCP server.
-Zenodo [10.5281/zenodo.21195679](https://doi.org/10.5281/zenodo.21195679) · 35 tests passing.
-
-## Publications & preprints
-
-**Preprints (public — arXiv, or self-archived on Zenodo; not peer reviewed):**
-
-- **Cancers of all lineages converge on the placental cytotrophoblast, a normal invasive cell state that malignancy deepens.** Zenodo preprint, 2026. 25 cancers projected into a 44-module eigenspace built from normal cells only; program space contracts 6.3-fold, and within matched tumour–normal pairs malignancy deepens the state ~6× (colorectal 43/46, paired P < 10⁻¹²). Zenodo 10.5281/zenodo.20542130.
-- **Universal statistical signatures of evolution in artificial intelligence architectures.** arXiv:2604.10571, 2026. 935 ablation experiments across 161 publications; substrate-independent heavy-tailed DFE.
-- **Spectral exponents of the twelve-lead ECG reveal the anatomy of cardiac conduction disorders and a bifurcation between aging and disease.** Zenodo preprint, 2026 (submitted to bioRxiv). 412,730 recordings across three continents; CLBBB vs CRBBB AUC ≈ 0.98 cross-population. Zenodo 10.5281/zenodo.19945065.
-- **Transcriptomic noise accumulates within tissue identity across human aging.** Zenodo preprint (post-review v4), 2026. GTEx v8 + Tabula Muris Senis + Calico rat + macaque atlas; aging as systemic noise, not selective accumulation. Zenodo 10.5281/zenodo.19944444.
-
-**Under review:**
-
-- **Waveform asymmetry as a biomarker of neural aging.** *Frontiers in Aging Neuroscience*, 2026. LEMON (N=215) + Dortmund Vital Study (N=608) + 208-subject 5-year longitudinal. Zenodo 10.5281/zenodo.19912202.
-
-**Manuscripts (submission-ready / in preparation):**
-
-- **Cellular proteostasis modules causally enable memory consolidation through region-specific architectures.** Submission-ready. 26 predictions pre-registered across seven transcriptomic datasets; TLR9 knockout selectively blunts ER-chaperone induction by 60–75% and impairs contextual fear memory; 28 of 32 published proteostasis perturbations predicted, zero contradictions. [Summary](https://mool32.github.io/memory-consolidation/).
-- **Functional differentiation generates universal fitness-effect distributions in neural networks.** Submission-ready. Pythia 410M, 1,584 controlled ablations across 8 checkpoints.
-- **Clonal crystallization as a shared signature of bone-marrow aging and neural-network training.** Cross-substrate (Gini, eff_N) framework; caloric restriction rescues 64% of the aging drift in rat bone marrow.
-- **Temporal architecture of signaling oscillations predicts cancer gene function across pathways.** Rise/recovery temporal classification; OR = 27.5, p = 3.6 × 10⁻⁹ across 14 pathways.
-- **Negative feedback loop architecture as a modular predictor of cancer vulnerability.** 128 NFLs from KEGG; 59-fold CGC enrichment (p = 9 × 10⁻⁴⁴); Irreversible Authority metric (ρ = 0.83).
-- **The Oracle's Fingerprint: correlated AI forecasting errors and the limits of bias transmission.** GPT-4o / Claude / Gemini error correlation r = 0.78 on 568 Metaculus forecasts.
-- **21,000 attempts to think differently: a Russian adaptation of the Divergent Association Task.** N = 21,159; Cronbach's α = 0.899; live instrument deployed.
-
-**Technical reports:**
-
-- **EEG-based comprehension detection: a multi-dataset non-replication.** Honest negative result; 18 metrics, 5 datasets, 126 subjects.
-
-## Ongoing pilots
-
-- **Self-specific representations localize in emergent attention heads.** Pilot study (Pythia 410M): 29 active meta-heads, all Δ_self > Δ_cross (binomial p < 10⁻⁸). Scaling and cross-model replication in progress before write-up.
-- **Epistasis mapping in transformer attention heads.** Cross-model pairwise head-ablation interactions (Pythia 410M, OLMo-2 1B); pre-registered, multi-phase.
-- **Developmental epistasis in single-cell RNA-seq.** Biology-side test of the ML epistasis signature on Schiebinger 2019 reprogramming; pilot calibration.
-- **Epistemic Fitness Pilot.** Pre-registered (hash-locked) test of whether an LLM can discriminate scientific ideas by future impact.
-
-## Research experience
-
-**Independent computational researcher** · 2020 – present
-Independent research program across cellular perception, aging biomarkers,
-comparative biology of neural networks, and research-validation methodology.
-Recent concentration on the perceptome framework and single-cell /
-transcriptomic analysis; earlier work in computational neuroscience (EEG) and
-systems biology. All inferential projects preregistered; full code and data
-released on GitHub and Zenodo.
-
-**Affiliated with Vaika Inc.** · 2024 – present
-Vaika Inc. is a not-for-profit aging-research organization associated with the
-laboratory of Andrei Gudkov (Roswell Park Comprehensive Cancer Center). Aging
-manuscripts developed in this affiliation (e.g. pi-tissue-aging) were revised
-under Gudkov review.
-
-**Computational Biology Intern — BostonGene** · 2022
-Computational analysis in immuno-oncology: molecular tumor profiling and
-multi-omics data in a clinical-genomics setting.
-
-**B.Sc. / M.Sc. research — Moscow State University, Faculty of Physics** · 2018 – 2022
-Supervisor: Prof. L. Yakovenko. Agent-based / cellular-automata modeling of the
-cellular response to pro-inflammatory stimuli (TLR4/TLR6 → NF-κB → TNF →
-apoptosis), identifying key parameters of the innate-immunity signaling pathway.
-
-## Research methodology
-
-Author of the validation framework applied across the portfolio
-([mool32.github.io/methodology](https://mool32.github.io/methodology/)) —
-hash-locked pre-registration, sign-convention locks, locked-vs-working artifacts,
-reproducibility standards, negative results published in full, and machine-readable
-publishing. Includes explicit disclosure of how AI systems are used as research
-instruments and what they are deliberately not trusted with.
+How a cell integrates many signals into a single decision — to divide, to change
+identity, or to die — and what changes in that process in cancer. The main result so
+far is a reference map of normal human cell states, built without any cancer data, on
+which malignant cells from 25 cancer types converge on one restricted region; within a
+patient, malignant epithelium occupies that state far more often than the patient's own
+normal tissue. The method is computational analysis of single-cell data, with
+systematic testing of whether a result reflects biology or a technical artifact. The
+next step requires experiments: measuring directly how cells move between these states
+under stress.
 
 ## Education
 
-**M.Sc. Biophysics (coursework completed)** — Lomonosov Moscow State University, Faculty of Physics · 2021 – 2022
-Computer simulation in biology; physics of biopolymers; physicochemical
-kinetics; magnetic radio-spectroscopy in biology and medicine. Thesis defense
-not completed due to relocation from Russia in 2022.
+**Lomonosov Moscow State University**, Faculty of Physics, Moscow
 
-**B.Sc. Biophysics** — Lomonosov Moscow State University, Faculty of Physics · 2014 – 2021
-Completed over an extended period: taught mathematics and physics throughout the
-degree (see Teaching) and became a parent during it.
+**M.Sc. program in Physics** (Department of Biophysics) · 2021 – 2022
+One semester completed: graduate courses in physics of biopolymers, magnetic resonance
+spectroscopy in biology and medicine, computer modelling in biology, and
+physicochemical kinetics. Studies interrupted on leaving Russia in 2022.
 
-**Lyceum 1525, Physics & Mathematics** — Moscow · 2010 – 2014
+**B.Sc. in Physics** (Department of Biophysics) · 2014 – 2021
+Thesis, graded excellent: *Effects of Jerusalem artichoke polysaccharide on cell state
+in a cellular automaton model.* Supervisor: Prof. Leonid Yakovenko. Completed over an
+extended period alongside teaching work (see Teaching) and family responsibilities.
+
+Academic records from Moscow State University are issued under the name
+**Fedor Spirin** (the name on the Russian passport); research is published under
+**Theodor Spiro** (the name on the Israeli passport).
+
+## Research experience
+
+**Independent researcher** · 2020 – present
+**Affiliated with Vaika Inc.** (nonprofit aging-research organization), East Aurora, NY · 2024 – present
+Independent computational research program on cell states in cancer and aging. Built a
+reference coordinate system of normal human cell states and showed that malignant cells
+from 25 cancer types converge on one region of it, and that within a patient malignant
+epithelium occupies that state far more often than the patient's own normal tissue.
+Developed open-source software for this analysis and for separating biological signal
+from technical artifacts in single-cell data. Manuscript preparation advised by
+Dr. Andrei Gudkov (Roswell Park Comprehensive Cancer Center).
+
+**Undergraduate research**, Department of Biophysics, Moscow State University · 2018 – 2021
+Supervisor: Prof. Leonid Yakovenko. Stochastic cellular-automaton model of how a cell
+chooses between survival and apoptosis after receptor stimulation (Dectin-1, TLR6,
+TNFR1), including the NF-κB and c-FLIP feedback that controls caspase-8 activation. The
+model predicted three regimes — apoptosis, survival, and unstable oscillation between
+them — depending on the strength of that feedback.
+
+## Preprints and manuscripts
+
+*All single-author; none peer reviewed.*
+
+**Preprints**
+
+1. **Diverse cancers converge on one region of normal cell-state space in a cancer-blind coordinate system.** Zenodo, 2026. doi:10.5281/zenodo.20542129
+   A map of 154 normal human cell types built without cancer data; malignant cells from
+   25 cancer types fall into one restricted region. Within patients, tumor epithelium
+   occupies that state far more often than the same patient's normal epithelium
+   (colorectal: 43 of 46 patients), in every tissue tested except prostate.
+2. **Waveform asymmetry as a biomarker of neural aging.** Zenodo, 2026. doi:10.5281/zenodo.19912202
+   The shape of brain-wave cycles changes with age in two independent cohorts of more
+   than 800 adults, more strongly than the classical slowing of the alpha rhythm.
+3. **Spectral exponents of the twelve-lead ECG reveal the anatomy of cardiac conduction disorders.** Zenodo, 2026. doi:10.5281/zenodo.19945065
+   In 412,000 electrocardiograms from three continents, one measure of the signal's
+   frequency structure identifies the type of conduction block; it reflects cardiac
+   anatomy rather than aging.
+4. **Transcriptomic noise accumulates within tissue identity across human aging.** Zenodo, 2026. doi:10.5281/zenodo.19944444
+   With age, gene activity in human tissues becomes noisier while each tissue keeps its
+   identity; caloric restriction reduces the noise rather than restoring structure.
+5. **Universal statistical signatures of evolution in artificial intelligence architectures.** arXiv:2604.10571, 2026.
+   Modifications of neural-network architectures show a distribution of effects similar
+   to that of mutations in living organisms.
+
+**Manuscripts in preparation — cancer signaling**
+
+6. **Temporal architecture of signaling oscillations predicts cancer gene function.**
+   Across 14 signaling pathways, genes that switch a signal on are enriched for
+   oncogenes, and genes that switch it off for tumor suppressors.
+7. **Negative feedback loop architecture predicts cancer vulnerability.**
+   Genes in negative feedback loops of signaling pathways are strongly enriched for
+   known cancer genes.
+
+**Other work.** Further manuscripts and pilot studies — proteostasis in memory
+consolidation, neural-network interpretability, forecasting, creativity measurement —
+and two negative results reported in full are listed at
+[mool32.github.io/publications](https://mool32.github.io/publications/).
+
+## Software
+
+**perceptome** (2026). Open-source Python package that places any cell on the reference
+map of normal cell states and runs the within-patient convergence assay, with built-in
+checks against common artifacts. doi:10.5281/zenodo.20113468
+
+**metric-autopsy** (2026). Open-source tool that tests, step by step, whether a
+measurement taken from single-cell data reflects biology or a technical artifact; built
+from three of the author's own documented analysis errors. doi:10.5281/zenodo.21195679
+
+## Grants and honors
+
+Emergent Ventures grant, Mercatus Center at George Mason University · 2026
+
+## Presentations and meetings
+
+Lomonosov Scientific Conference, Moscow · 2021 · talk on the cellular-automaton model
+of the survival–apoptosis decision
+
+Emergent Ventures unconference, Copenhagen · 2026 · participant
 
 ## Teaching
 
-Eleven years teaching mathematics and physics (ages 11–25), including curriculum
-design at Le Sallay Academy (selective international gifted program, 2025–2026),
-co-founder and lead teacher of BrainyBara (Israel, 2022–present), and prior
-roles at Foxford Online School (Moscow, 2015–2018) and Moscow State University
-(Instructor, Advanced Mathematics, 2018–2020). Full teaching record available on
-request.
+Mathematics and physics to students aged 11–25, including olympiad and
+examination preparation.
 
-## Professional development
+- **Le Sallay Academy**, international program for gifted students: curriculum design and teaching · 2025 – 2026
+- **BrainyBara** (Israel): co-founder and lead teacher · 2022 – present
+- **Moscow State University**: instructor, preparatory courses and olympiad mathematics · 2018 – 2020
+- **Foxford Online School** (Moscow): teacher · 2015 – 2018
 
-- Evidence-Based Teaching Practices — Harvard University BOK Center · 2022 – 2024
-- Psychology of Development and Learning — MSUPE, Moscow · 2020
-- Learning to Teach Online — University of New South Wales · 2020
+*Evidence-Based Teaching Practices*, Derek Bok Center for Teaching and Learning,
+Harvard University — online course with certificate · 2022 – 2024
 
-## Grants & honors
+## Skills
 
-- **Emergent Ventures grant** — Mercatus Center · 2026
-- **Lomonosov Scientific Conference** — presentation, Moscow · 2021
+**Computational.** Python; statistics; single-cell RNA sequencing analysis;
+mathematical modelling (cellular automata, dynamical systems); open-source research
+software with automated testing.
 
-## Technical skills
-
-- **Programming:** Python (NumPy, Pandas, SciPy, scikit-learn, matplotlib, PyTorch), Git, Bash, LaTeX, SQL basics
-- **Methods:** preregistered experimental design, bootstrap uncertainty quantification, distribution fitting with AIC comparison, dimensionality reduction, time-series and signal analysis, agent-based modeling
-- **Bioinformatics:** single-cell RNA-seq pipelines (scanpy / AnnData), quality control and batch/confound diagnostics, gene-set and pathway module scoring, differential expression, PCA and eigenspace construction, cross-dataset replication
-- **Data domains:** single-cell & bulk RNA-seq, GTEx / Tabula Muris Senis / Human Protein Atlas, EEG / ECG signals, neural-network interpretability, large-scale forecasting data
-- **Software engineering:** installable Python packages (`pyproject.toml`), pytest suites, GitHub Actions CI, MCP servers, containerless reproducible pipelines with pinned environments
-- **AI-assisted research:** LLM-integrated analysis pipelines under an explicit preregistration / reproducibility framework
+**Research practice.** Predictions registered before analysis; negative results
+reported in full; AI tools used for coding and analysis, with independent validation of
+every result.
 
 ## Languages
 
-Russian (native) · English (C1; all research published in English) · Hebrew (beginner)
+Russian (native) · English (fluent) · Hebrew (basic)
+
+## References
+
+Available on request.
 
 </div>

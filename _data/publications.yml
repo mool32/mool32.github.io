@@ -3,16 +3,16 @@
 # Rendered on /publications/ (all) and / (where selected/headline is true).
 # Ordering follows the `order` field in papers.bib.
 
-- key: spiro2026cytotrophoblast
-  title: "Cancers of all lineages converge on the placental cytotrophoblast, a normal invasive cell state that malignancy deepens"
+- key: spiro2026convergence
+  title: "Diverse cancers converge on one region of normal cell-state space in a cancer-blind coordinate system"
   authors: "Spiro, T."
   year: 2026
   venue: "Preprint (Zenodo)"
   abbr: "preprint"
-  doi: "10.5281/zenodo.20542130"
-  abstract: "A coordinate map built from 44 signaling modules over 154 normal cell types — no cancer data — onto which the malignant cells of 25 cancers converge. The anchor is the placental cytotrophoblast, a normal cell state that naturally invades, proliferates, and evades immunity; within patients, malignancy deepens the state ~6× over matched normal tissue (colorectal 43/46, paired P < 10⁻¹²). Not a uniquely cancerous program but a normal placental/developmental one, pushed deeper."
+  doi: "10.5281/zenodo.20542129"
+  abstract: "A coordinate system for cellular state built from 44 regulatory modules scored across 154 normal human cell types -- no cancer data anywhere in its construction. Malignant cells from 25 cancer datasets land in one restricted region of it. Most of that contraction is shared transcriptional output; a smaller convergence in module pattern survives the matched null. The most defensible claim is within patients: malignant epithelium occupies the state far more often than the same patient's normal epithelium (colorectal 19 percent vs 3 percent, 43 of 46 patients), in every tissue tested except prostate. The nearest normal cell is the placental cytotrophoblast, but independent rebuilds of the catalog reproduce the region while naming a different cell -- the region is the robust finding, the anchor is conditional on this catalog."
   stage: "preprint"
-  status: "preprint on Zenodo (DOI 10.5281/zenodo.20542130)"
+  status: "preprint on Zenodo (concept DOI 10.5281/zenodo.20542129)"
   selected: true
   headline: true
 
@@ -100,13 +100,13 @@
   title: "Waveform asymmetry as a biomarker of neural aging: spatial degradation of oscillatory cycle shape across two independent cohorts"
   authors: "Spiro, T."
   year: 2026
-  venue: "Frontiers in Aging Neuroscience (under review)"
-  abbr: "Front. Aging Neurosci."
+  venue: "Preprint (Zenodo)"
+  abbr: "preprint"
   doi: "10.5281/zenodo.19912202"
   code: "https://github.com/mool32/waveform-asymmetry-aging"
   abstract: "Peak-trough asymmetry of EEG oscillations across five frequency bands in 215 (LEMON) and 608 (Dortmund Vital Study) adults, with 208-subject 5-year longitudinal follow-up. Beta-band asymmetry decreases with age (r = −0.326 LEMON, r = −0.314 Dortmund); effect size exceeds classical alpha slowing. Theta spatial entropy predicts memory independent of age."
-  stage: "under-review"
-  status: "under review at Frontiers in Aging Neuroscience"
+  stage: "preprint"
+  status: "preprint on Zenodo (DOI 10.5281/zenodo.19912202)"
   selected: true
 
 - key: spiro2026clonalcrystallization

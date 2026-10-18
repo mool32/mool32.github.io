@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Theodor Spiro — cellular perception, aging biomarkers, learning systems"
-description: "Independent computational researcher (Vaika Inc., Tel Aviv). Cancers of all lineages converge on the placental cytotrophoblast; aging biomarkers across ECG, EEG and transcriptome. Pre-registered, with code and a DOI behind every claim."
+description: "Independent computational researcher (Vaika Inc., Tel Aviv). Malignant cells from 25 cancer types converge on one region of a map built from normal cells only; aging biomarkers across ECG, EEG and transcriptome. Pre-registered, with code and a DOI behind every claim."
 ---
 
 <section class="hero">
@@ -18,23 +18,24 @@ description: "Independent computational researcher (Vaika Inc., Tel Aviv). Cance
   <p class="positioning">
     I build coordinate systems for cellular state, then test what they predict —
     predictions locked before the data, failures published next to the wins.
-    The current result: <strong>the malignant cells of 25 cancers, from every major
-    lineage, converge on one normal human cell type — the placental
-    cytotrophoblast</strong> — a state that malignancy deepens about sixfold inside
-    a patient's own tissue.
+    The current result: <strong>malignant cells from 25 cancer types, across diverse
+    lineages, converge on one restricted region of a map built from normal cells
+    only</strong> — and within a patient, malignant epithelium occupies that state far
+    more often than the patient's own normal tissue (colorectal: 43 of 46 patients).
   </p>
 </section>
 
 <figure>
-  <img src="{{ '/assets/img/cancer/convergence-eigenspace.png' | relative_url }}"
-       alt="154 normal human cell types plotted in the perceptome eigenspace (PC1 × PC4), with the placental cytotrophoblast marked as the anchor that 25 cancers converge on and the megakaryocyte as a secondary">
+  <img src="{{ '/assets/img/cancer/convergence-region.png' | relative_url }}"
+       alt="Two panels. A: the 154 normal human cell types of the reference, placed by their proximity to the two cells nearest the convergence region and coloured by the share of malignant cells from 25 cancers that land nearest to them; the most-visited types cluster at the high-proximity edge. B: the twelve normal cell types receiving most of the convergence, against 0.66 percent expected by chance.">
   <figcaption>
-    A map of 154 normal human cell types, built from 44 signaling modules using
-    <strong>no cancer data at all</strong>. Project 25 quality-controlled cancer datasets into
-    it afterwards and the malignant cells land in one small region — anchored by the
-    placental cytotrophoblast, the normal cell that already invades tissue, proliferates,
-    and evades immunity.
-    <a href="https://doi.org/10.5281/zenodo.20542130">Preprint · DOI</a>
+    A map of 154 normal human cell types, built from 44 regulatory modules using
+    <strong>no cancer data at all</strong>. Project malignant cells from 25 cancer
+    datasets into it afterwards and they land in one restricted region. The nearest
+    normal cell is the placental cytotrophoblast — but independent rebuilds of the
+    module catalog reproduce the region while naming a different cell in it, so the
+    region is the robust finding and the anchor is conditional on the catalog.
+    <a href="https://doi.org/10.5281/zenodo.20542129">Preprint · DOI</a>
   </figcaption>
 </figure>
 
@@ -42,10 +43,11 @@ description: "Independent computational researcher (Vaika Inc., Tel Aviv). Cance
 
 **1 · Cellular perception — what a cell can sense, and where cancer takes it.**
 [perceptome](https://github.com/mool32/perceptome) treats 44 signaling pathways as a
-cell's perceptual repertoire and places any cell on one 9-dimensional map (Python
-toolkit, Zenodo DOI, 74/74 tests). The
-[cancer-convergence result](https://doi.org/10.5281/zenodo.20542130) above is what
-that map was built to test. A related strand asks whether the same architecture holds
+cell's regulatory repertoire and places any cell on one 9-dimensional map (Python
+toolkit, Zenodo DOI). The
+[cancer-convergence result](https://doi.org/10.5281/zenodo.20542129) above is what
+that map was built to test, and the preprint records what it retracts as carefully as
+what it finds. A related strand asks whether the same architecture holds
 in neurons: proteostasis modules
 [causally enable memory consolidation](/memory-consolidation/) — shown by a knockout
 that removes one arm of the machinery and the memory with it.

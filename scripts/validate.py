@@ -21,7 +21,9 @@ also fired). Checks:
   * identity is consistent across the pages that state it: canonical name
     and surname, ORCID, public email, and — the checkable one — that the
     independent programme (2020) is never conflated with the Vaika
-    affiliation (2024)
+    affiliation (2024). The one documented exception is the records name
+    'Fedor Spirin', which the CV must state because the MSU transcripts
+    carry it.
 """
 import os
 import re
@@ -221,12 +223,20 @@ for rel in IDENT_FILES:
             err(f"{rel}: mailto:{addr} is not the canonical public email {IDENT['email']}")
 
     # non-canonical spellings of the author name
-    for ln, line in enumerate(text.split("\n"), 1):
+    _lines = text.split("\n")
+    for ln, line in enumerate(_lines, 1):
+        # the records name may wrap, so test this line joined with the next one,
+        # with markdown emphasis stripped
+        _ctx = re.sub(r"[*_`]", "", line + " " + (_lines[ln] if ln < len(_lines) else ""))
         for bad in NAME_VARIANTS:
             if bad in line:
                 err(f"{rel}:{ln}: non-canonical author name {bad!r} — use {IDENT['name']!r}")
-        if re.search(r"\bSpirin\b", line):
-            err(f"{rel}:{ln}: surname typo 'Spirin' — the canonical surname is 'Spiro'")
+        # 'Spirin' is a typo everywhere EXCEPT the documented legal-name note:
+        # academic records from Moscow State University are issued under the name
+        # Fedor Spirin, and the CV has to say so. Only "Fedor Spirin" is allowed.
+        if re.search(r"\bSpirin\b", line) and "Fedor Spirin" not in _ctx:
+            err(f"{rel}:{ln}: surname typo 'Spirin' — the canonical surname is 'Spiro' "
+                "(the only allowed use is the documented records name 'Fedor Spirin')")
 
     # 'Serbanescu' is allowed only where the historical name-note is documented
     if "Serbanescu" in text and rel not in ("llms.txt", "methodology.md"):
