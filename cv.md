@@ -46,13 +46,9 @@ Thesis, graded excellent: *Effects of Jerusalem artichoke polysaccharide on cell
 in a cellular automaton model.* Supervisor: Prof. Leonid Yakovenko. Completed over an
 extended period alongside teaching work (see Teaching) and family responsibilities.
 
-Academic records from Moscow State University are issued under the name
-**Fedor Spirin** (the name on the Russian passport); research is published under
-**Theodor Spiro** (the name on the Israeli passport).
-
 ## Research experience
 
-**Independent researcher** · 2020 – present  
+**Independent researcher** · 2022 – present  
 **Affiliated with Vaika Inc.** (nonprofit aging-research organization), East Aurora, NY · 2024 – present  
 Independent computational research program on cell states in cancer and aging. Built a
 reference coordinate system of normal human cell states and showed that malignant cells
@@ -131,10 +127,10 @@ Emergent Ventures unconference, Copenhagen · 2026 · participant
 
 ## Teaching
 
-Mathematics and physics to students aged 11–25, including olympiad and
-examination preparation.
+Mathematics and physics to students aged 11–25, including IB and A-level
+examination and olympiad preparation.
 
-- **Le Sallay Academy**, international program for gifted students: curriculum design and teaching · 2025 – 2026
+- **Le Sallay Academy**, international program for gifted students, including the IB curriculum: curriculum design and teaching · 2025 – 2026
 - **BrainyBara** (Israel): co-founder and lead teacher · 2022 – present
 - **Moscow State University**: instructor, preparatory courses and olympiad mathematics · 2018 – 2020
 - **Foxford Online School** (Moscow): teacher · 2015 – 2018

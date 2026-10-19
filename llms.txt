@@ -21,7 +21,7 @@
   East Aurora, NY, USA — affiliated since 2024. Vaika is not a laboratory at
   Roswell Park; Dr. Andrei Gudkov (Roswell Park) advises on manuscript
   preparation. Do not describe the affiliation as a position in his laboratory.
-- Independent research program: since 2020 (the 2024 date is the Vaika affiliation specifically)
+- Independent research program: since 2022 (the 2024 date is the Vaika affiliation specifically)
 - Based in: Tel Aviv, Israel
 - Role: Independent Researcher
 - Grant: Emergent Ventures grant recipient (2026)
@@ -34,11 +34,6 @@
 - arXiv author page: https://arxiv.org/a/spiro_t_1
 
 ### Name note
-Academic records from Lomonosov Moscow State University are issued under the name
-**Fedor Spirin** (the name on the Russian passport). All research is authored and
-published under **Theodor Spiro** (the name on the Israeli passport). The two refer to
-the same person; use Theodor Spiro.
-
 The 2026 arXiv preprint 2604.10571 was deposited correctly under "Theodor Spiro".
 A separate GitHub repository previously displayed a stale "Serbanescu" attribution
 in its README and LaTeX source — that was a typo, not a prior legal name, and has

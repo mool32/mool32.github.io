@@ -21,9 +21,7 @@ also fired). Checks:
   * identity is consistent across the pages that state it: canonical name
     and surname, ORCID, public email, and — the checkable one — that the
     independent programme (2020) is never conflated with the Vaika
-    affiliation (2024). The one documented exception is the records name
-    'Fedor Spirin', which the CV must state because the MSU transcripts
-    carry it.
+    affiliation (2024).
 """
 import os
 import re
@@ -199,7 +197,7 @@ IDENT = {
     "name":              "Theodor Spiro",
     "orcid":             "0009-0004-5382-9346",
     "email":             "tspiro@vaika.org",
-    "program_since":     "2020",   # the independent research programme
+    "program_since":     "2022",   # the independent research programme
     "affiliation_since": "2024",   # the Vaika Inc. affiliation
 }
 IDENT_FILES = ["index.md", "cv.md", "llms.txt", "_config.yml",
@@ -231,12 +229,10 @@ for rel in IDENT_FILES:
         for bad in NAME_VARIANTS:
             if bad in line:
                 err(f"{rel}:{ln}: non-canonical author name {bad!r} — use {IDENT['name']!r}")
-        # 'Spirin' is a typo everywhere EXCEPT the documented legal-name note:
-        # academic records from Moscow State University are issued under the name
-        # Fedor Spirin, and the CV has to say so. Only "Fedor Spirin" is allowed.
-        if re.search(r"\bSpirin\b", line) and "Fedor Spirin" not in _ctx:
-            err(f"{rel}:{ln}: surname typo 'Spirin' — the canonical surname is 'Spiro' "
-                "(the only allowed use is the documented records name 'Fedor Spirin')")
+        # The records name (Fedor Spirin, on the MSU transcripts) belongs in
+        # application forms under "other names", not on the public site.
+        if re.search(r"\bSpirin\b", line):
+            err(f"{rel}:{ln}: surname typo 'Spirin' — the canonical surname is 'Spiro'")
 
     # 'Serbanescu' is allowed only where the historical name-note is documented
     if "Serbanescu" in text and rel not in ("llms.txt", "methodology.md"):
